@@ -53,7 +53,9 @@ wiring; neither feature is implemented here.
   Both windows retain 97×26 cells at 1280×900. Source artwork and prior research
   and prototypes are unchanged.
 - `tools/verify.py`: all retained native-state, text and pixel assertions pass.
-  `git diff --check` passes.
+  Source/documentation diff whitespace checks pass. Raw fixed-width terminal
+  dumps intentionally retain trailing blank cells; full diff checks flag those
+  preserved evidence lines.
 
 ## Actual application screenshots
 
