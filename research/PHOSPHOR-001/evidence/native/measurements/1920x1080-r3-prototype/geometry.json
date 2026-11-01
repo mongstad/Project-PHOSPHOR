@@ -1,0 +1,26 @@
+[
+  {
+    "id": "{57b0568f-0b3a-44fc-b2e3-d3618e849b62}",
+    "pid": 98916,
+    "caption": "PHOSPHOR-001 | 1920X1080-R3-PROTOTYPE EFFECTS ON",
+    "resourceClass": "org.phosphor.Spike001",
+    "frame": {
+      "x": 100,
+      "y": 80,
+      "width": 1928,
+      "height": 1122
+    },
+    "client": {
+      "x": 104,
+      "y": 118,
+      "width": 1920,
+      "height": 1080
+    },
+    "buffer": {
+      "x": 104,
+      "y": 118,
+      "width": 1920,
+      "height": 1080
+    }
+  }
+]

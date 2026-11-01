@@ -1,0 +1,31 @@
+info: ghostty version=1.4.0
+info: ghostty build optimize=fast
+info: runtime=.gtk
+info: font_backend=.fontconfig_freetype
+info: dependency harfbuzz=11.0.0
+info: dependency fontconfig=21803
+info: renderer=renderer.generic.Renderer(renderer.OpenGL)
+info: libxev default backend=io_uring
+info(os_locale): setlocale from env result=C.UTF-8
+info(gtk): GTK version build=4.22.5 runtime=4.22.5
+info(gtk): libadwaita version build=1.9.4 runtime=1.9.4
+info(config): creating template config file: path=/tmp/phosphor-001-config.RD10LVRV/ghostty/config.ghostty
+info(config): config-default-files unset, discarding configuration from default files
+info: reading configuration file path=/home/Nozba/Codex/Project-PHOSPHOR/Project-PHOSPHOR/prototypes/ghostty-molten-amber/config
+info(config): default shell source=env value=/bin/bash
+warning(gtk_ghostty_application): setting GDK_DEBUG=
+warning(gtk_ghostty_application): setting GDK_DISABLE=vulkan
+info(gtk_ghostty_surface): surface content scale: x=1 y=1 dpi=96x96 font_size=12
+info(font_shared_grid_set): font regular: Noto Sans Mono Regular
+info(font_shared_grid_set): font bold: Noto Sans Mono Bold
+info(font_shared_grid_set): font italic: Noto Sans Mono Regular
+info(font_shared_grid_set): font bold_italic: Noto Sans Mono Bold
+info(opengl): EGL vendor=NVIDIA
+info(opengl): EGL extensions=EGL_ANDROID_native_fence_sync EGL_EXT_buffer_age EGL_EXT_client_sync EGL_EXT_create_context_robustness EGL_EXT_image_dma_buf_import EGL_EXT_image_dma_buf_import_modifiers EGL_MESA_image_dma_buf_export EGL_EXT_output_base EGL_EXT_output_drm EGL_EXT_pixel_format_float EGL_EXT_protected_content EGL_EXT_stream_consumer_egloutput EGL_EXT_stream_acquire_mode EGL_EXT_sync_reuse EGL_IMG_context_priority EGL_KHR_config_attribs EGL_KHR_create_context_no_error EGL_KHR_context_flush_control EGL_KHR_create_context EGL_KHR_fence_sync EGL_KHR_get_all_proc_addresses EGL_KHR_partial_update EGL_KHR_swap_buffers_with_damage EGL_KHR_no_config_context EGL_KHR_gl_colorspace EGL_KHR_gl_renderbuffer_image EGL_KHR_gl_texture_2D_image EGL_KHR_gl_texture_3D_image EGL_KHR_gl_texture_cubemap_image EGL_KHR_image EGL_KHR_image_base EGL_KHR_reusable_sync EGL_KHR_stream EGL_KHR_stream_attrib EGL_KHR_stream_consumer_gltexture EGL_KHR_stream_cross_process_fd EGL_KHR_stream_fifo EGL_KHR_stream_producer_eglsurface EGL_KHR_surfaceless_context EGL_KHR_wait_sync EGL_NV_nvrm_fence_sync EGL_NV_quadruple_buffer EGL_NV_stream_consumer_eglimage EGL_NV_stream_cross_display EGL_NV_stream_cross_object EGL_NV_stream_cross_process EGL_NV_stream_cross_system EGL_NV_stream_dma EGL_NV_stream_flush EGL_NV_stream_metadata EGL_NV_stream_remote EGL_NV_stream_reset EGL_NV_stream_socket EGL_NV_stream_socket_inet EGL_NV_stream_socket_unix EGL_NV_stream_sync EGL_NV_stream_fifo_next EGL_NV_stream_fifo_synchronous EGL_NV_stream_consumer_gltexture_yuv EGL_NV_stream_attrib EGL_NV_stream_origin EGL_NV_system_time EGL_NV_output_drm_flip_event EGL_NV_triple_buffer EGL_NV_robustness_video_memory_purge EGL_WL_bind_wayland_display EGL_WL_wayland_eglstream EGL_EXT_present_opaque
+info(io_exec): found Ghostty resources dir: /tmp/phosphor-001-native/install/share/ghostty
+info(io_exec): shell integration disabled by configuration
+info(io_exec): started subcommand path=python3 pid=98272
+info(opengl): loaded OpenGL 4.3
+info(font_codepoint_resolver): found codepoint 0x65E5 in fallback face=Noto Sans CJK JP Regular
+info(io_exec): pty fd closed, read thread exiting
+info(surface): surface closed id=9dfc10697146b88a

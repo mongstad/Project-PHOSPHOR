@@ -1,0 +1,26 @@
+[
+  {
+    "id": "{87fed961-145e-4712-8e0e-baa5417e1cca}",
+    "pid": 100005,
+    "caption": "PHOSPHOR-001 | 3840X2160-R2-PROTOTYPE EFFECTS ON",
+    "resourceClass": "org.phosphor.Spike001",
+    "frame": {
+      "x": 100,
+      "y": 80,
+      "width": 3848,
+      "height": 2202
+    },
+    "client": {
+      "x": 104,
+      "y": 118,
+      "width": 3840,
+      "height": 2160
+    },
+    "buffer": {
+      "x": 104,
+      "y": 118,
+      "width": 3840,
+      "height": 2160
+    }
+  }
+]

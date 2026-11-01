@@ -1,0 +1,10 @@
+{"event": "start", "run": "1920x1080-r1-baseline", "pid": 96052}
+{"event": "workload_done", "run": "1920x1080-r1-baseline", "workload": "idle"}
+{"event": "workload_done", "run": "1920x1080-r1-baseline", "workload": "scroll"}
+{"event": "exit", "run": "1920x1080-r1-baseline", "returncode": 0}
+{"event": "start", "run": "1920x1080-r1-prototype", "pid": 96411}
+{"event": "workload_done", "run": "1920x1080-r1-prototype", "workload": "idle"}
+{"event": "workload_done", "run": "1920x1080-r1-prototype", "workload": "scroll"}
+{"event": "exit", "run": "1920x1080-r1-prototype", "returncode": 0}
+{"event": "start", "run": "1920x1080-r2-prototype", "pid": 96671}
+{"event": "exit", "run": "1920x1080-r2-prototype", "returncode": 0}

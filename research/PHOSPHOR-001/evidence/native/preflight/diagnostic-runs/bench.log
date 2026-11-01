@@ -1,0 +1,5 @@
+Traceback (most recent call last):
+  File "/tmp/phosphor-001-native/session/bench.py", line 35, in <module>
+    due=prev_t+1;time.sleep(max(0,due-time.monotonic()))
+                 ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt

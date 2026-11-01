@@ -1,0 +1,50 @@
+PHOSPHOR-001 validation performed 2026-11-01
+
+From prototypes/ghostty-molten-amber:
+$ bash -n run.sh
+Exit 0.
+
+$ python3 -B -m unittest discover -s checks -p 'test_*.py' -v
+test_baseline_uses_only_isolated_config ... ok
+test_command_arguments_are_not_evaluated ... ok
+test_invalid_command_separator_does_not_start_ghostty ... ok
+test_invalid_mode_does_not_start_ghostty ... ok
+test_missing_binary_reports_dependency_without_installing ... ok
+test_missing_mode_does_not_start_ghostty ... ok
+test_prototype_differs_only_by_shader ... ok
+Ran 7 tests in 0.113s. OK.
+These use a stub executable; they do not start Ghostty or validate its config.
+
+$ python3 -B checks/compile_shader.py /tmp/phosphor-001-ghostty-source/src/renderer/shaders/shadertoy_prefix.glsl
+PASS: pinned prefix + shader compiled to 10412 bytes of SPIR-V
+PASS: invalid GLSL rejected (negative control)
+Exit 0. Existing libshaderc-2026.1-1.fc44.x86_64; no installation.
+This is not Ghostty's complete glslang/SPIRV-Cross/OpenGL pipeline.
+
+From repository root:
+$ bash prototypes/ghostty-molten-amber/run.sh prototype
+Ghostty is unavailable. Supply an owner-approved binary with GHOSTTY=/absolute/path.
+Exit 127. No native application launched.
+
+$ python3 -B prototypes/ghostty-molten-amber/fixtures.py static > /tmp/phosphor-001-static.vt
+Exit 0; 27 newline characters, 4469 bytes.
+$ python3 -B prototypes/ghostty-molten-amber/fixtures.py scroll --seconds 0.1 > /tmp/phosphor-001-scroll.vt
+Exit 0; this run generated 192 lines, 12292 bytes. Scheduling affects line count.
+These are synthetic workload streams, not screenshot or performance evidence.
+
+Fullscreen workload smoke: opened a pseudo-terminal with pty.openpty, set a
+100x24 cell size via TIOCSWINSZ, and ran fixtures.py fullscreen --seconds 0.2
+with TERM=xterm-256color. Child exited 0. Captured stream contained alternate
+screen entry ESC[?1049h, the 100x24 title, and alternate screen exit ESC[?1049l.
+No graphical renderer, selection, resizing or interactive usability was tested.
+
+All three Python files parsed successfully with ast.parse.
+All local Markdown links resolved to existing files.
+sha256sum -c research/PHOSPHOR-001/evidence/artwork.sha256: all five files OK.
+git diff --cached --check passed after staging the complete change.
+
+NOT PERFORMED: Ghostty config validation or shader loading, native screenshots,
+visual comparison, keyboard/mouse/copy-paste, actual fastfetch/prompt rendering,
+cursor/selection tests, terminal resize/scroll/TUI visual tests, ANSI/Unicode
+rendering checks, native 1080p or 4K CPU/GPU/redraw/latency measurements.
+Issue #1's acceptance gate has not been passed.

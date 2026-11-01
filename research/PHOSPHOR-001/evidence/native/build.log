@@ -1,0 +1,125 @@
+info: fetching lazy dependency N-V-__8AAB0eQwD-0MdOEBmz7intriBReIsIDNlukNVoNu6o
+info: fetching lazy dependency N-V-__8AAP5JWgCGP_AD0teWpa4krRvE9VPZzvviGdbmN4jI
+info: fetching lazy dependency N-V-__8AADYiAAB_80AWnH1AxXC0tql9thT-R-DYO1gBqTLc
+info: fetching lazy dependency N-V-__8AAGmZhABbsPJLfbqrh6JTHsXhY6qCaLAQyx25e0XE
+info: fetching lazy dependency N-V-__8AAJ3vBQAq1fLMh5J8uWLkeDLS6WAdR2x5KcrmEyz6
+info: fetching lazy dependency N-V-__8AAJrvXQCqAT8Mg9o_tk6m0yf5Fz-gCNEOKLyTSerD
+info: fetching lazy dependency N-V-__8AAKLKpwC4H27Ps_0iL3bPkQb-z6ZVSrB-x_3EEkub
+info: fetching lazy dependency N-V-__8AAG02ugUcWec-Ndp-i7JTsJ0dgF8nnJRUInkGLG7G
+info: fetching lazy dependency N-V-__8AAG3RoQEyRC2Vw7Qoro5SYBf62IHn3HjqtNVY6aWK
+info: fetching lazy dependency N-V-__8AAOgqbADacob-q2_DMQlmgaG4xKHRuW-6PJ4oJzMZ
+info: fetching lazy dependency N-V-__8AAHjwMQDBXnLq3Q2QhaivE0kE2aD138vtX2Bq1g7c
+info: fetching lazy dependency N-V-__8AABzkUgISeKGgXAzgtutgJsZc0-kkeqBBscJgMkvy
+info: fetching lazy dependency N-V-__8AANb6pwD7O1WG6L5nvD_rNMvnSc9Cpg1ijSlTYywv
+info: fetching lazy dependency vaxis-0.6.0-BWNV_MafDAAEzkVUvrW9NFUqnnMUoeHqrs2mecnD6D7w
+info: fetching lazy dependency libxev-0.0.0-86vtc8QQFACz0sVc7U-VDiDIgH-XfBuEY5JpABLjHNpn
+info: fetching lazy dependency z2d-0.13.0-j5P_HgsRFABzZDH54gI35P0OSrg7HFyJwS2bXX5uBdU4
+info: fetching lazy dependency zf-0.11.0-OIRy8XCRAAB6FiMwIrtD6FqlagnFwpI6YyOu7bXeYH5J
+info: fetching lazy dependency N-V-__8AAEbOfQBnvcFcCX2W5z7tDaN8vaNZGamEQtNOe0UI
+info: fetching lazy dependency N-V-__8AANT61wB--nJ95Gj_ctmzAtcjloZ__hRqNw5lC1Kr
+info: fetching lazy dependency N-V-__8AAIC5lwAVPJJzxnCAahSvZTIlG-HhtOvnM1uh-66x
+info: fetching lazy dependency N-V-__8AAMVLTABmYkLqhZPLXnMl-KyN38R8UVYqGrxqO26s
+info: fetching lazy dependency gobject-0.3.2-Skun7LuIogBbEh-6WrLeEzMaRCnOMB3eOf__RaPYSMCZ
+info: fetching lazy dependency N-V-__8AAKrHGAAs2shYq8UkE6bGcR1QJtLTyOE_lcosMn6t
+info: fetching lazy dependency N-V-__8AAFdWDwA0ktbNUi9pFBHCRN4weXIgIfCrVjfGxqgA
+info: fetching lazy dependency N-V-__8AAKYZBAB-CFHBKs3u4JkeiT4BMvyHu3Y5aaWF3Bbs
+info: fetching lazy dependency wayland-0.7.0-dev-lQa1klz9AQB87V0pMKMdm8JvyOx32XR9FxcWnw9wh6XZ
+install
++- install ghostty
+   +- compile exe ghostty fast native-native
+      +- translate-c generated failure
+error: pkg-config: Package xproto was not found in the pkg-config search path.
+Perhaps you should add the directory containing `xproto.pc'
+to the PKG_CONFIG_PATH environment variable
+Package 'xproto', required by 'xrender', not found
+Package 'renderproto', required by 'xrender', not found
+Package 'xproto', required by 'x11', not found
+Package 'kbproto', required by 'x11', not found
+Package 'xproto', required by 'xft', not found
+Package 'xextproto', required by 'xext', not found
+Package 'xproto', required by 'xau', not found
+
+./.zig-cache/o/8ab0b64eed0443628de05a5fe787a9b0/adw_c.h:1:10: fatal error: 'adwaita.h' not found
+#include <adwaita.h>
+         ^
+error: process exited with code 1
+failed command: ./.zig-cache/o/e711f233930345405fa35e0749b81fe9/translate-c -o=./.zig-cache/tmp/92ce35a017e2c2b0/generated.zig -O=fast --target=native-native -mcpu=baseline -lc -l=00111,libadwaita-1 --zig-lib=/tmp/phosphor-001-native/zig-x86_64-linux-0.17.0/lib -fmodule-libs -- ./.zig-cache/o/8ab0b64eed0443628de05a5fe787a9b0/adw_c.h -MD -MV -MF ./.zig-cache/tmp/92ce35a017e2c2b0/deps.d -w -resource-dir ./zig-pkg/aro-0.0.0-JSD1QtuBNwCASyBtNF3pqTl_W3oAJQGEVyFAtrBSE_Pa
+
+install
++- install ghostty
+   +- compile exe ghostty fast native-native
+      +- translate-c generated failure
+error: pkg-config: Package xproto was not found in the pkg-config search path.
+Perhaps you should add the directory containing `xproto.pc'
+to the PKG_CONFIG_PATH environment variable
+Package 'xproto', required by 'x11', not found
+Package 'kbproto', required by 'x11', not found
+
+./.zig-cache/o/1b8c2eaccc904cee04fe0dea56b0aec8/x11_c.h:1:10: fatal error: 'X11/Xlib.h' not found
+#include <X11/Xlib.h>
+         ^
+error: process exited with code 1
+failed command: ./.zig-cache/o/e711f233930345405fa35e0749b81fe9/translate-c -o=./.zig-cache/tmp/d5e30ace769fb4f6/generated.zig -O=fast --target=native-native -mcpu=baseline -lc -l=00111,X11 --zig-lib=/tmp/phosphor-001-native/zig-x86_64-linux-0.17.0/lib -fmodule-libs -- ./.zig-cache/o/1b8c2eaccc904cee04fe0dea56b0aec8/x11_c.h -MD -MV -MF ./.zig-cache/tmp/d5e30ace769fb4f6/deps.d -w -resource-dir ./zig-pkg/aro-0.0.0-JSD1QtuBNwCASyBtNF3pqTl_W3oAJQGEVyFAtrBSE_Pa
+
+install
++- install ghostty
+   +- compile exe ghostty fast native-native
+      +- translate-c generated failure
+error: pkg-config: Package xproto was not found in the pkg-config search path.
+Perhaps you should add the directory containing `xproto.pc'
+to the PKG_CONFIG_PATH environment variable
+Package 'xproto', required by 'xrender', not found
+Package 'renderproto', required by 'xrender', not found
+Package 'xproto', required by 'x11', not found
+Package 'kbproto', required by 'x11', not found
+Package 'xproto', required by 'xft', not found
+Package 'xextproto', required by 'xext', not found
+Package 'xproto', required by 'xau', not found
+
+./.zig-cache/o/4bab6d4e4d38fc027a0f182dbb7bbfef/gtk_c.h:1:10: fatal error: 'gtk/gtk.h' not found
+#include <gtk/gtk.h>
+         ^
+error: process exited with code 1
+failed command: ./.zig-cache/o/e711f233930345405fa35e0749b81fe9/translate-c -o=./.zig-cache/tmp/bab263ed2ddef2fc/generated.zig -O=fast --target=native-native -mcpu=baseline -lc -l=00111,gtk4 --zig-lib=/tmp/phosphor-001-native/zig-x86_64-linux-0.17.0/lib -fmodule-libs -- ./.zig-cache/o/4bab6d4e4d38fc027a0f182dbb7bbfef/gtk_c.h -MD -MV -MF ./.zig-cache/tmp/bab263ed2ddef2fc/deps.d -w -resource-dir ./zig-pkg/aro-0.0.0-JSD1QtuBNwCASyBtNF3pqTl_W3oAJQGEVyFAtrBSE_Pa
+
+install
++- install ghostty
+   +- compile exe ghostty fast native-native
+      +- translate-c generated failure
+error: pkg-config: Package xproto was not found in the pkg-config search path.
+Perhaps you should add the directory containing `xproto.pc'
+to the PKG_CONFIG_PATH environment variable
+Package 'xproto', required by 'xrender', not found
+Package 'renderproto', required by 'xrender', not found
+Package 'xproto', required by 'x11', not found
+Package 'kbproto', required by 'x11', not found
+Package 'xproto', required by 'xft', not found
+Package 'xextproto', required by 'xext', not found
+Package 'xproto', required by 'xau', not found
+
+error: pkg-config: Package xproto was not found in the pkg-config search path.
+Perhaps you should add the directory containing `xproto.pc'
+to the PKG_CONFIG_PATH environment variable
+Package 'xproto', required by 'xrender', not found
+Package 'renderproto', required by 'xrender', not found
+Package 'xproto', required by 'x11', not found
+Package 'kbproto', required by 'x11', not found
+Package 'xproto', required by 'xft', not found
+Package 'xextproto', required by 'xext', not found
+Package 'xproto', required by 'xau', not found
+
+./.zig-cache/o/b3e89acb56d53d137dba3b3a9db5bcb1/gtk4_layer_shell_c.h:1:10: fatal error: 'gtk4-layer-shell.h' not found
+#include <gtk4-layer-shell.h>
+         ^
+error: process exited with code 1
+failed command: ./.zig-cache/o/e711f233930345405fa35e0749b81fe9/translate-c -o=./.zig-cache/tmp/3d68b063f860e681/generated.zig -O=fast --target=native-native -mcpu=baseline -lc -l=00111,gtk4 -l=00111,gtk4-layer-shell-0 --zig-lib=/tmp/phosphor-001-native/zig-x86_64-linux-0.17.0/lib -fmodule-libs -- ./.zig-cache/o/b3e89acb56d53d137dba3b3a9db5bcb1/gtk4_layer_shell_c.h -MD -MV -MF ./.zig-cache/tmp/3d68b063f860e681/deps.d -w -resource-dir ./zig-pkg/aro-0.0.0-JSD1QtuBNwCASyBtNF3pqTl_W3oAJQGEVyFAtrBSE_Pa
+
+Build Summary: 231/238 steps succeeded (4 failed)
+install transitive failure
++- install ghostty transitive failure
+   +- compile exe ghostty fast native-native transitive failure
+      +- translate-c generated failure
+      +- translate-c generated failure
+      +- translate-c generated failure
+      +- translate-c generated failure
+

@@ -1,0 +1,20 @@
+{
+  "source": {
+    "url": "https://release.files.ghostty.org/1.4.0/ghostty-1.4.0.tar.gz",
+    "sha256": "cb188ac6c3a8278d5fd7bfef15d8c017104c87f638b5560eb38024a71ae0f005",
+    "signature_verified": true,
+    "trusted_comment_verified": true,
+    "public_key": "RWQlAjJC23149WL2sEpT/l0QKy7hMIFhYdQOFy0Z7z7PbneUgvlsnYcV",
+    "tag_commit": "83fb95624b0439ee660c2679b43b38c8b63769cd"
+  },
+  "zig": {
+    "tarball": "https://ziglang.org/download/0.17.0/zig-x86_64-linux-0.17.0.tar.xz",
+    "shasum": "1cbe9df9f27e6b78d14ccbca43b6703a404ef79ef1c463de901d7f088d4e2026",
+    "size": "57332648"
+  },
+  "binary_sha256": "267f1f67367c57626a1c30259e376a1294680e0a42d8ffc1bbeb9557f8980b66",
+  "prefix": "/tmp/phosphor-001-native/install",
+  "rpm_installs": 0,
+  "system_display_changes": 0,
+  "early_template_sha256": "300f4f7adcd317780da51412b39a9052a3272a822b7e5ebbcbb0c37e5b086d23"
+}

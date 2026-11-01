@@ -1,0 +1,17 @@
+# Experimental baseline shared by both modes; not an accepted PHOSPHOR theme.
+font-family = Noto Sans Mono
+font-size = 12
+background = 060504
+foreground = ff9e2e
+background-opacity = 1
+# Use Ghostty's Linux default linear pipeline; shader operates in that space.
+alpha-blending = linear-corrected
+cursor-color = e8efff
+cursor-text = 060504
+selection-background = 33405c
+selection-foreground = ffffff
+window-decoration = auto
+window-padding-x = 8
+window-padding-y = 8
+custom-shader-animation = false
+shell-integration = none

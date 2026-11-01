@@ -1,0 +1,6 @@
+PASS: 720 finite samples; 24 complete 30-sample groups; 12 successful ordered runs; native versions, mode logs and buffer geometry consistent.
+PASS: all eight reported summary rows recompute from raw data; measured shader/config/launcher snapshots match retained prototype.
+PASS: 14 original PNG files decode; four final capture dimensions/geometry and dark backgrounds match; 26 archived session hashes match metadata.
+PASS: all approved artwork and development plan match accepted main; original Phase 0 report and validation record remain byte-identical.
+PASS: all JSON/JSONL parse; 10 Python snapshots parse without executing native helpers; 53 local Markdown/image links resolve; no unfinished report placeholders.
+PASS: existing source/compiler/binary and 50 RPM hashes match provenance; upstream source signature and trusted comment reverify offline; early template hash matches. No binary was launched or rebuilt.

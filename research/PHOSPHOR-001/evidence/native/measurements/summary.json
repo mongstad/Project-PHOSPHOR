@@ -1,0 +1,66 @@
+[
+  {
+    "client_buffer": "1920x1080",
+    "mode": "baseline",
+    "workload": "idle",
+    "samples": 90,
+    "mean_cpu_one_core_pct": 0.31108934951262807,
+    "median_whole_gpu_pct": 23.0
+  },
+  {
+    "client_buffer": "1920x1080",
+    "mode": "baseline",
+    "workload": "scroll",
+    "samples": 90,
+    "mean_cpu_one_core_pct": 14.032368524805554,
+    "median_whole_gpu_pct": 28.0
+  },
+  {
+    "client_buffer": "1920x1080",
+    "mode": "prototype",
+    "workload": "idle",
+    "samples": 90,
+    "mean_cpu_one_core_pct": 0.5999587494734717,
+    "median_whole_gpu_pct": 23.5
+  },
+  {
+    "client_buffer": "1920x1080",
+    "mode": "prototype",
+    "workload": "scroll",
+    "samples": 90,
+    "mean_cpu_one_core_pct": 16.23222663046998,
+    "median_whole_gpu_pct": 31.0
+  },
+  {
+    "client_buffer": "3840x2160",
+    "mode": "baseline",
+    "workload": "idle",
+    "samples": 90,
+    "mean_cpu_one_core_pct": 0.4777451759209016,
+    "median_whole_gpu_pct": 21.0
+  },
+  {
+    "client_buffer": "3840x2160",
+    "mode": "baseline",
+    "workload": "scroll",
+    "samples": 90,
+    "mean_cpu_one_core_pct": 19.03206431836725,
+    "median_whole_gpu_pct": 33.0
+  },
+  {
+    "client_buffer": "3840x2160",
+    "mode": "prototype",
+    "workload": "idle",
+    "samples": 90,
+    "mean_cpu_one_core_pct": 0.6999512770768612,
+    "median_whole_gpu_pct": 29.0
+  },
+  {
+    "client_buffer": "3840x2160",
+    "mode": "prototype",
+    "workload": "scroll",
+    "samples": 90,
+    "mean_cpu_one_core_pct": 25.40942843902113,
+    "median_whole_gpu_pct": 34.0
+  }
+]
