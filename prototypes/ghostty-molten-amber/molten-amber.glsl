@@ -1,10 +1,15 @@
 // PHOSPHOR-001: a falsifiable composited-frame experiment, not a glyph material.
 // Ghostty supplies the Shadertoy prefix; do not add #version or a main().
-// This assumes config's opaque background, amber foreground and native blending.
+// This assumes config's opaque background, amber foreground and linear blending.
 // Amber backgrounds/images WILL be confused with text. See the report.
 
 const vec3 BG = vec3(6.0, 5.0, 4.0) / 255.0;
 const vec3 FG = vec3(255.0, 158.0, 46.0) / 255.0;
+
+vec3 toLinear(vec3 srgb) {
+    return mix(srgb / 12.92, pow((srgb + 0.055) / 1.055, vec3(2.4)),
+               greaterThan(srgb, vec3(0.04045)));
+}
 
 vec4 sourceAt(vec2 pixel) {
     // Explicit bounds stop glow sampling from wrapping to the opposite edge.
@@ -15,9 +20,11 @@ vec4 sourceAt(vec2 pixel) {
 float amberCoverage(vec3 color) {
     // Recover coverage ONLY for the known foreground/background color line.
     // This is not a general glyph mask or a solution for arbitrary ANSI colors.
-    vec3 direction = FG - BG;
-    float coverage = clamp(dot(color - BG, direction) / dot(direction, direction), 0.0, 1.0);
-    float residual = length(color - mix(BG, FG, coverage));
+    vec3 background = toLinear(BG);
+    vec3 foreground = toLinear(FG);
+    vec3 direction = foreground - background;
+    float coverage = clamp(dot(color - background, direction) / dot(direction, direction), 0.0, 1.0);
+    float residual = length(color - mix(background, foreground, coverage));
     return coverage * (1.0 - smoothstep(0.025, 0.075, residual));
 }
 
@@ -65,10 +72,10 @@ void mainImage(out vec4 fragColor, in vec2 fragCoord) {
     vec3 material = mix(vec3(0.72, 0.25, 0.025), vec3(1.0, 0.88, 0.54),
                         clamp(0.55 + 0.30 * directionalHighlight + 0.25 * innerEdge, 0.0, 1.0));
     // Retain the original antialiasing footprint and most of its sharp color.
-    vec3 result = original.rgb + center * (material - FG) * 0.55;
+    vec3 result = original.rgb + center * (toLinear(material) - toLinear(FG)) * 0.55;
     result += center * vec3(0.13, 0.11, 0.06);
     // Restrict halos to the configured dark background, retaining other colors.
-    float backgroundOnly = 1.0 - smoothstep(0.015, 0.055, length(original.rgb - BG));
+    float backgroundOnly = 1.0 - smoothstep(0.015, 0.055, length(original.rgb - toLinear(BG)));
     result += backgroundOnly * vec3(1.0, 0.40, 0.06)
             * (0.12 * nearGlow + 0.055 * middleGlow + 0.02 * farGlow);
     fragColor = vec4(clamp(result, 0.0, 1.0), original.a);

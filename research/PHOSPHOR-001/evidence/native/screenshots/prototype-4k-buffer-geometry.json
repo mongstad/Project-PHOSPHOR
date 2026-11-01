@@ -1,0 +1,26 @@
+[
+  {
+    "id": "{53f37075-2966-4095-9f8b-a2bf373bb828}",
+    "pid": 97176,
+    "caption": "/bin/bash",
+    "resourceClass": "org.phosphor.Spike001",
+    "frame": {
+      "x": 100,
+      "y": 80,
+      "width": 3848,
+      "height": 2202
+    },
+    "client": {
+      "x": 104,
+      "y": 118,
+      "width": 3840,
+      "height": 2160
+    },
+    "buffer": {
+      "x": 104,
+      "y": 118,
+      "width": 3840,
+      "height": 2160
+    }
+  }
+]

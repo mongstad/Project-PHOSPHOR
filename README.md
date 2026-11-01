@@ -9,6 +9,8 @@ The project is in feasibility testing. See the [development plan](Development_Pl
 - [Issue #1 research and acceptance status](research/PHOSPHOR-001/REPORT.md)
 - [Isolated Molten Amber shader experiment](prototypes/ghostty-molten-amber/README.md)
 
-The experiment has **not run in Ghostty**. Visual fidelity, terminal usability,
-and native GPU performance remain unverified. Product implementation requires
+The native experiment has run; its current recommendation is **NO-GO for the
+tested post-processing approach**. Further testing stopped at the owner's request.
+See the [stop record](research/PHOSPHOR-001/STOP_RECORD.md) for remaining
+validation gaps and local/unpublished status. Product implementation requires
 the owner's acceptance of feasibility evidence and separate authorization.

@@ -1,0 +1,22 @@
+Ghostty 1.4.0
+
+Version
+  - version: 1.4.0
+  - channel: stable
+Build Config
+  - Zig version   : 0.17.0
+  - build mode    : .fast
+  - app runtime   : .gtk
+  - font engine   : .fontconfig_freetype
+  - renderer      : renderer.generic.Renderer(renderer.OpenGL)
+  - libxev        : epoll
+  - kernel version: 7.2.13-200.fc44.x86_64
+  - desktop env   : other
+  - GTK version   :
+    build         : 4.22.5
+    runtime       : 4.22.5
+  - libadwaita    : enabled
+    build         : 1.9.4
+    runtime       : 1.9.4
+  - libX11        : enabled
+  - libwayland    : enabled

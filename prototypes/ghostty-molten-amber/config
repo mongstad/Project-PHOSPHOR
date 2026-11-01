@@ -4,8 +4,8 @@ font-size = 12
 background = 060504
 foreground = ff9e2e
 background-opacity = 1
-# Fix the shader's input color space for this experiment.
-alpha-blending = native
+# Use Ghostty's Linux default linear pipeline; shader operates in that space.
+alpha-blending = linear-corrected
 cursor-color = e8efff
 cursor-text = 060504
 selection-background = 33405c

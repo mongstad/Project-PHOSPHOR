@@ -1,0 +1,63 @@
+install
++- install ghostty
+   +- compile exe ghostty fast native-native failure
+error: error: unable to find dynamic system library "egl" using strategy mode_first. searched paths:
+         /tmp/phosphor-001-native/sysroot/usr/lib64/libegl.so
+         /tmp/phosphor-001-native/sysroot/usr/lib64/libegl.so
+         /tmp/phosphor-001-native/sysroot/usr/lib64/libegl.so
+         /tmp/phosphor-001-native/sysroot/usr/lib64/libegl.so
+         /tmp/phosphor-001-native/sysroot/usr/lib64/libegl.so
+         /tmp/phosphor-001-native/sysroot/usr/lib64/libegl.so
+         /tmp/phosphor-001-native/sysroot/usr/lib64/libegl.so
+         /tmp/phosphor-001-native/sysroot/usr/lib64/libegl.so
+         /tmp/phosphor-001-native/sysroot/usr/lib64/libegl.so
+         /tmp/phosphor-001-native/sysroot/usr/lib64/libegl.so
+         /tmp/phosphor-001-native/sysroot/usr/lib64/libegl.so
+         /tmp/phosphor-001-native/sysroot/usr/lib64/libegl.so
+         /tmp/phosphor-001-native/sysroot/usr/lib64/libegl.so
+         /tmp/phosphor-001-native/sysroot/usr/lib64/libegl.so
+         /tmp/phosphor-001-native/sysroot/usr/lib64/libegl.so
+         /tmp/phosphor-001-native/sysroot/usr/lib64/libegl.so
+         /tmp/phosphor-001-native/sysroot/usr/lib64/libegl.so
+         /tmp/phosphor-001-native/sysroot/usr/lib64/libegl.so
+         /tmp/phosphor-001-native/sysroot/usr/lib64/libegl.so
+         /usr/local/lib64/libegl.so
+         /usr/local/lib/libegl.so
+         /lib64/libegl.so
+         /lib/libegl.so
+         /usr/lib64/libegl.so
+         /usr/lib/libegl.so
+         /tmp/phosphor-001-native/sysroot/usr/lib64/libegl.a
+         /tmp/phosphor-001-native/sysroot/usr/lib64/libegl.a
+         /tmp/phosphor-001-native/sysroot/usr/lib64/libegl.a
+         /tmp/phosphor-001-native/sysroot/usr/lib64/libegl.a
+         /tmp/phosphor-001-native/sysroot/usr/lib64/libegl.a
+         /tmp/phosphor-001-native/sysroot/usr/lib64/libegl.a
+         /tmp/phosphor-001-native/sysroot/usr/lib64/libegl.a
+         /tmp/phosphor-001-native/sysroot/usr/lib64/libegl.a
+         /tmp/phosphor-001-native/sysroot/usr/lib64/libegl.a
+         /tmp/phosphor-001-native/sysroot/usr/lib64/libegl.a
+         /tmp/phosphor-001-native/sysroot/usr/lib64/libegl.a
+         /tmp/phosphor-001-native/sysroot/usr/lib64/libegl.a
+         /tmp/phosphor-001-native/sysroot/usr/lib64/libegl.a
+         /tmp/phosphor-001-native/sysroot/usr/lib64/libegl.a
+         /tmp/phosphor-001-native/sysroot/usr/lib64/libegl.a
+         /tmp/phosphor-001-native/sysroot/usr/lib64/libegl.a
+         /tmp/phosphor-001-native/sysroot/usr/lib64/libegl.a
+         /tmp/phosphor-001-native/sysroot/usr/lib64/libegl.a
+         /tmp/phosphor-001-native/sysroot/usr/lib64/libegl.a
+         /usr/local/lib64/libegl.a
+         /usr/local/lib/libegl.a
+         /lib64/libegl.a
+         /lib/libegl.a
+         /usr/lib64/libegl.a
+         /usr/lib/libegl.a
+       
+error: process exited with code 1
+failed command: /tmp/phosphor-001-native/zig-x86_64-linux-0.17.0/zig build-exe @.zig-cache/args/bf23bcd4897f80ee216205ff437ae55fa4f9ed3766bbb37c500f0e9d66b23dbd
+
+Build Summary: 235/238 steps succeeded (1 failed)
+install transitive failure
++- install ghostty transitive failure
+   +- compile exe ghostty fast native-native failure
+

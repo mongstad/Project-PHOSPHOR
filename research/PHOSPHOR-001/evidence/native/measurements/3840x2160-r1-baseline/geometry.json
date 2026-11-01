@@ -1,0 +1,26 @@
+[
+  {
+    "id": "{5e2fd223-f218-4194-b100-3a610142d36d}",
+    "pid": 99290,
+    "caption": "PHOSPHOR-001 | 3840X2160-R1-BASELINE EFFECTS OFF",
+    "resourceClass": "org.phosphor.Spike001",
+    "frame": {
+      "x": 100,
+      "y": 80,
+      "width": 3848,
+      "height": 2202
+    },
+    "client": {
+      "x": 104,
+      "y": 118,
+      "width": 3840,
+      "height": 2160
+    },
+    "buffer": {
+      "x": 104,
+      "y": 118,
+      "width": 3840,
+      "height": 2160
+    }
+  }
+]

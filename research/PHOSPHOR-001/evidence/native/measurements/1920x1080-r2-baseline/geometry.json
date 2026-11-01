@@ -1,0 +1,26 @@
+[
+  {
+    "id": "{de4030ab-f28c-4960-9891-6a73e515f675}",
+    "pid": 98202,
+    "caption": "python3",
+    "resourceClass": "org.phosphor.Spike001",
+    "frame": {
+      "x": 100,
+      "y": 80,
+      "width": 1928,
+      "height": 1122
+    },
+    "client": {
+      "x": 104,
+      "y": 118,
+      "width": 1920,
+      "height": 1080
+    },
+    "buffer": {
+      "x": 104,
+      "y": 118,
+      "width": 1920,
+      "height": 1080
+    }
+  }
+]

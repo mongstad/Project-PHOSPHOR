@@ -20,8 +20,11 @@ class LauncherTests(unittest.TestCase):
         self.binary.write_text(
             f"#!{sys.executable}\n"
             "import json, os, pathlib, sys\n"
+            "config = pathlib.Path(os.environ['XDG_CONFIG_HOME'])\n"
+            "(config / 'ghostty').mkdir()\n"
+            "(config / 'ghostty/config.ghostty').write_text('test template')\n"
             "pathlib.Path(os.environ['PHOSPHOR_CAPTURE']).write_text("
-            "json.dumps({'args': sys.argv[1:], 'history': os.environ.get('HISTFILE')}))\n"
+            "json.dumps({'args': sys.argv[1:], 'history': os.environ.get('HISTFILE'), 'config': str(config)}))\n"
         )
         self.binary.chmod(0o700)
         self.env = dict(os.environ, GHOSTTY=str(self.binary), PHOSPHOR_CAPTURE=str(self.capture))
@@ -52,6 +55,19 @@ class LauncherTests(unittest.TestCase):
         shaders = [a for a in prototype if a.startswith("--custom-shader=")]
         self.assertEqual(shaders, [f"--custom-shader={ROOT}/molten-amber.glsl"])
         self.assertEqual([a for a in prototype if a not in shaders], baseline)
+
+    def test_early_template_write_is_isolated_and_cleaned_up(self):
+        original = self.folder / 'existing user config'
+        original.mkdir()
+        sentinel = original / 'untouched'
+        sentinel.write_text('preserve')
+        self.env['XDG_CONFIG_HOME'] = str(original)
+        self.assertEqual(self.run_mode('baseline').returncode, 0)
+        temporary = Path(self.captured()['config'])
+        self.assertNotEqual(temporary, original)
+        self.assertFalse(temporary.exists())
+        self.assertEqual(sentinel.read_text(), 'preserve')
+        self.assertEqual(list(original.iterdir()), [sentinel])
 
     def test_command_arguments_are_not_evaluated(self):
         marker = self.folder / "must not exist"

@@ -1,7 +1,8 @@
 # Molten Amber composited-frame experiment
 
 For [PHOSPHOR-001](https://github.com/mongstad/Project-PHOSPHOR/issues/1).
-**Prepared, not executed in Ghostty.** This is a disposable experiment to test
+**Executed in a locally built Ghostty 1.4.0 on Fedora/KDE/Wayland.** See the
+[native findings](../../research/PHOSPHOR-001/REPORT.md). This is a disposable experiment to test
 whether a small local filter produces useful cores, contours, and glow at normal
 font sizes. It does not establish a metallic glyph material or concept fidelity.
 Read the [research report](../../research/PHOSPHOR-001/REPORT.md) first.
@@ -20,19 +21,25 @@ bash run.sh baseline
 bash run.sh prototype
 ```
 
-Each command starts a separate process with default config files disabled,
+Each command starts a separate process with a temporary XDG config directory,
+default config files disabled,
 the same checked-in config, and a clean Bash shell. Only prototype mode adds
 the shader. Existing Ghostty instances do not receive these settings. Konsole
 profiles, the default terminal, and display modes are not changed. The shell
 does not load user startup files, and its Bash history goes to `/dev/null`.
+The temporary config directory is removed when Ghostty exits. This also
+contains the template Ghostty creates before parsing its CLI config flags.
 The white cursor and blue selection are experimental visibility controls;
 they are not claims that the approved amber cursor/selection design is met.
 
 The shader uses 17 input samples on its full path, a four-physical-pixel halo,
 and no time input. The shared config disables shader animation. Keep the same
 font, scale, geometry, content, and focus state when comparing modes.
+The experiment uses `alpha-blending=linear-corrected` and converts its material
+colors to linear space. A native run exposed a lifted background with the
+earlier `native` setting; the diagnostic captures are retained separately.
 
-## Native validation procedure — not yet performed
+## Native validation procedure
 
 1. Record `ghostty +version`, GPU/driver, monitor refresh, KDE/Wayland versions,
    scale and exact **terminal surface pixel dimensions**, plus the prototype
@@ -109,7 +116,8 @@ compiler pipeline, OpenGL driver, terminal rendering, or performance.
 
 ## Cleanup
 
-Exit the disposable shell/window. No config needs restoring. The prototype is
+Exit the disposable shell/window; the launcher cleans its temporary XDG config.
+No user config needs restoring. The prototype is
 entirely in this directory; remove a disposable checkout if no longer needed.
 Preserve all screenshots and measurement records before removing anything.
 If an owner-approved binary was installed separately, handle its removal

@@ -41,4 +41,8 @@ if [[ $# -eq 0 ]]; then
 fi
 # Keep this disposable shell out of the user's Bash history.
 export HISTFILE=/dev/null
-exec "$ghostty_bin" "${args[@]}" -e "$@"
+# Ghostty creates a template before parsing config-default-files=false.
+# Isolate that early write as well as all later configuration reads.
+isolated_config=$(mktemp -d "${TMPDIR:-/tmp}/phosphor-001-config.XXXXXXXX")
+trap 'rm -rf -- "$isolated_config"' EXIT
+XDG_CONFIG_HOME="$isolated_config" "$ghostty_bin" "${args[@]}" -e "$@"
