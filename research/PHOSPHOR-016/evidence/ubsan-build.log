@@ -1,0 +1,57 @@
+-- The C compiler identification is GNU 16.2.1
+-- The CXX compiler identification is Clang 22.1.8
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/clang++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+-- Found Threads: TRUE
+-- Performing Test HAVE_STDATOMIC
+-- Performing Test HAVE_STDATOMIC - Success
+-- Found WrapAtomic: TRUE
+-- Found OpenGL: /usr/lib64/libOpenGL.so
+-- Found WrapOpenGL: TRUE
+-- Found WrapVulkanHeaders: /usr/include
+-- Found PkgConfig: /usr/bin/pkg-config (found version "2.5.1")
+-- Checking for module 'vterm>=0.3.3'
+--   Found vterm, version 0.3.3
+glyph.vert -> glyph.vert.qsb exposed as :/shaders/glyph.vert.qsb
+glyph.frag -> glyph.frag.qsb exposed as :/shaders/glyph.frag.qsb
+-- Configuring done (1.1s)
+-- Generating done (0.0s)
+-- Build files have been written to: /tmp/phosphor-016-ubsan
+[  6%] Building CXX object CMakeFiles/terminal-core.dir/pty.cpp.o
+[ 12%] Building CXX object CMakeFiles/terminal-core.dir/terminal.cpp.o
+[ 18%] Building CXX object CMakeFiles/terminal-view_resources_1.dir/.qt/rcc/qrc_glyph_shaders_init.cpp.o
+[ 18%] Built target terminal-view_resources_1
+[ 25%] Linking CXX static library libterminal-core.a
+[ 25%] Built target terminal-core
+[ 31%] Generating .qsb/glyph.vert.qsb
+[ 37%] Generating .qsb/glyph.frag.qsb
+[ 43%] Running rcc for resource glyph_shaders
+[ 68%] Building CXX object CMakeFiles/terminal-view.dir/view.cpp.o
+[ 68%] Building CXX object CMakeFiles/terminal-view.dir/home/Nozba/Codex/Project-PHOSPHOR/Project-PHOSPHOR/prototypes/qt-molten-amber/renderer.cpp.o
+[ 68%] Building CXX object CMakeFiles/terminal-view.dir/.qt/rcc/qrc_glyph_shaders.cpp.o
+[ 68%] Building CXX object CMakeFiles/terminal-view.dir/home/Nozba/Codex/Project-PHOSPHOR/Project-PHOSPHOR/prototypes/qt-gpu-atlas/fixture.cpp.o
+[ 75%] Linking CXX static library libterminal-view.a
+[ 75%] Built target terminal-view
+[ 81%] Building CXX object CMakeFiles/terminal-tests.dir/tests.cpp.o
+[ 87%] Building CXX object CMakeFiles/phosphor-terminal.dir/main.cpp.o
+[ 93%] Linking CXX executable terminal-tests
+[ 93%] Built target terminal-tests
+[100%] Linking CXX executable phosphor-terminal
+[100%] Built target phosphor-terminal
+[  6%] Built target terminal-view_resources_1
+[ 25%] Built target terminal-core
+[ 75%] Built target terminal-view
+[ 81%] Building CXX object CMakeFiles/phosphor-terminal.dir/main.cpp.o
+[ 93%] Built target terminal-tests
+[100%] Linking CXX executable phosphor-terminal
+[100%] Built target phosphor-terminal

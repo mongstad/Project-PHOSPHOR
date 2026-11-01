@@ -1,0 +1,9 @@
+GEOMETRY QSize(1280, 900) GRID 97 26 DPR 1
+GEOMETRY QSize(1280, 900) GRID 97 26 DPR 1
+GEOMETRY QSize(1280, 900) GRID 97 26 DPR 1
+SHELL_PID 16852 SHELL "/bin/bash" ARGS QList("--noprofile", "--norc", "-i")
+qt.qpa.services: Failed to register with host portal QDBusError("org.freedesktop.portal.Error.Failed", "Could not register app ID: App info not found for 'org.phosphor.Terminal004'")
+BACKEND 3
+FIRST_FRAME_MS 1209
+CAPTURE QSize(1280, 900)
+SUMMARY {"cached_glyphs":132,"columns":97,"dpr":1,"elapsed_ms":10220,"fallback_cells":0,"first_frame_ms":1209,"height":900,"history_lines":1000,"parse_ms":9.990695,"read_bytes":11221,"render_calls":233,"render_work_ms":1142.716397,"rows":26,"scroll_offset":0,"texture_bytes":1152000,"width":1280}

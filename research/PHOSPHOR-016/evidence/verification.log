@@ -1,0 +1,5 @@
+PASS native navigation, anchoring, eviction, resize, alternate screen, shell input, pixel preservation
+baseline idle duration_ms 2031 renders 0 render_ms 0.0 ms_per_render 0
+baseline output duration_ms 3500 renders 190 render_ms 28.2658 ms_per_render 0.1488
+current idle duration_ms 2000 renders 0 render_ms 0.0 ms_per_render 0
+current output duration_ms 3301 renders 178 render_ms 26.4704 ms_per_render 0.1487

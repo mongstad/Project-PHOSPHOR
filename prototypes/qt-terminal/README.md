@@ -89,3 +89,29 @@ runs and measurements. Evidence captures are unedited; derived crops are labeled
 
 Close the window or exit the shell to stop. No install, background service,
 Konsole configuration or package release is produced by this milestone.
+
+## Scrollbar (issue #16)
+
+Every `TerminalView` now includes a slim amber scrollbar in its existing right
+padding. Grid sizing is unchanged: the bar consumes no text columns. Drag the
+thumb to choose a history position; click above/below it to move one page with
+one row of overlap. Wheel and Shift+PageUp/Down continue to navigate history.
+Returning to the bottom follows live output, and ordinary typing returns live.
+The control keeps keyboard focus in the terminal.
+
+Thumb size reflects visible rows divided by retained history plus visible rows,
+with a 24 logical-pixel minimum for dragging. Incoming lines preserve the visible
+history while moving/shrinking the thumb; once those lines are evicted by the
+1,000-line limit, the viewport advances to the oldest retained line. Resize
+keeps the history offset instead of snapping live, retaining the existing
+crop/no-reflow policy. Empty history and alternate-screen applications show a
+full-height dimmed, inactive thumb. Leaving alternate screen returns live.
+Selection is still absent (issue #10); no selection state is added or discarded.
+Future tabs/splits using `TerminalView` inherit this control automatically.
+
+[Issue #16 evidence and limitations](../../research/PHOSPHOR-016/REPORT.md)
+includes native screenshots and reproducible input checks. The local test-script
+harness also accepts timestamped `mouse` (`press`, `move`, `release`, `x`, `y`;
+`thumb: true` targets the current thumb center) and `wheel` angle-delta actions.
+Its key, mouse and wheel events route through the window; actions use precise
+timers to preserve order for closely spaced input events.

@@ -152,6 +152,56 @@ TerminalView::TerminalView(QQuickItem *p, Terminal &t, RenderMetrics &m)
   cell_ = metrics.cell();
   line_ = metrics.line();
 }
+// The existing 24 px right gutter holds the control without taking a column.
+QRectF TerminalView::scrollTrack() const {
+  return QRectF(width() - 14, 20, 10, std::max(qreal(0), height() - 40));
+}
+QRectF TerminalView::scrollThumb() const {
+  const auto track = scrollTrack();
+  const int history = terminal_.alternateScreen() ? 0 : terminal_.historySize();
+  const qreal size = std::min(track.height(), std::max(qreal(24),
+      track.height() * terminal_.rows() / (terminal_.rows() + history)));
+  const qreal position = history ? qreal(history - terminal_.offset()) / history : 1;
+  return QRectF(track.x(), track.y() + position * (track.height() - size),
+                track.width(), size);
+}
+void TerminalView::mousePressEvent(QMouseEvent *e) {
+  if (e->button() != Qt::LeftButton || !scrollTrack().contains(e->position())) {
+    e->ignore();
+    return;
+  }
+  forceActiveFocus(Qt::MouseFocusReason);
+  const auto thumb = scrollThumb();
+  if (!terminal_.alternateScreen() && terminal_.historySize()) {
+    if (thumb.contains(e->position())) {
+      dragging_ = true;
+      grabFraction_ = (e->position().y() - thumb.y()) / thumb.height();
+    } else {
+      terminal_.scroll((e->position().y() < thumb.y() ? 1 : -1) *
+                       std::max(1, terminal_.rows() - 1));
+    }
+  }
+  update();
+  e->accept();
+}
+void TerminalView::mouseMoveEvent(QMouseEvent *e) {
+  if (!dragging_) { e->ignore(); return; }
+  const auto track = scrollTrack(), thumb = scrollThumb();
+  const qreal travel = track.height() - thumb.height();
+  if (travel > 0) {
+    const qreal position = std::clamp(
+        (e->position().y() - track.y() - grabFraction_ * thumb.height()) / travel,
+        qreal(0), qreal(1));
+    terminal_.setOffset(qRound((1 - position) * terminal_.historySize()));
+  }
+  update();
+  e->accept();
+}
+void TerminalView::mouseReleaseEvent(QMouseEvent *e) {
+  dragging_ = false;
+  e->accept();
+}
+void TerminalView::mouseUngrabEvent() { dragging_ = false; }
 void TerminalView::wheelEvent(QWheelEvent *e) {
   terminal_.scroll(e->angleDelta().y() / 120 * 3);
   update();
@@ -285,6 +335,9 @@ QSGNode *TerminalView::updatePaintNode(QSGNode *old, UpdatePaintNodeData *) {
                            c.foreground);
     }
   solid(root, backgrounds);
+  solid(root, {{scrollTrack(), QColor(28, 21, 12)},
+               {scrollThumb(), terminal_.alternateScreen() || !terminal_.historySize()
+                                   ? QColor(65, 49, 29) : QColor(142, 103, 48)}});
   // Preserve row/glyph order across page switches and bounded batches.
   int current = -1;
   std::vector<Vertex> vertices;

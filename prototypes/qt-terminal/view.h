@@ -12,15 +12,23 @@ public:
   TerminalView(QQuickItem *parent, Terminal &terminal, RenderMetrics &metrics);
   qreal cellWidth() const { return cell_; }
   qreal lineHeight() const { return line_; }
+  QRectF scrollTrack() const;
+  QRectF scrollThumb() const;
   void handleKey(QKeyEvent *event);
 
 protected:
   QSGNode *updatePaintNode(QSGNode *, UpdatePaintNodeData *) override;
   void keyPressEvent(QKeyEvent *e) override { handleKey(e); }
+  void mousePressEvent(QMouseEvent *e) override;
+  void mouseMoveEvent(QMouseEvent *e) override;
+  void mouseReleaseEvent(QMouseEvent *e) override;
+  void mouseUngrabEvent() override;
   void wheelEvent(QWheelEvent *e) override;
 
 private:
   Terminal &terminal_;
   RenderMetrics &metrics_;
   qreal cell_, line_;
+  bool dragging_ = false;
+  qreal grabFraction_ = 0;
 };

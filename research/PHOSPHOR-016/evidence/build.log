@@ -1,0 +1,7 @@
+[  6%] Built target terminal-view_resources_1
+[ 25%] Built target terminal-core
+[ 75%] Built target terminal-view
+[ 87%] Built target terminal-tests
+[ 93%] Building CXX object CMakeFiles/phosphor-terminal.dir/main.cpp.o
+[100%] Linking CXX executable phosphor-terminal
+[100%] Built target phosphor-terminal
