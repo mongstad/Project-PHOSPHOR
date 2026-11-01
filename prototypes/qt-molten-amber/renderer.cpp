@@ -5,9 +5,9 @@
 #include <vector>
 
 GlyphMaterial::GlyphMaterial(int points, qreal dpr, bool effects, double edge,
-                             double glow)
+                             double glow, bool refine16)
     : font_("Noto Sans Mono", points), dpr_(dpr), effects_(effects),
-      edge_(edge), glow_(glow) {
+      refine16_(refine16 && points == 16), edge_(edge), glow_(glow) {
   font_.setWeight(QFont::DemiBold);
   font_.setStyleHint(QFont::Monospace);
   font_.setHintingPreference(QFont::PreferNoHinting);
@@ -87,6 +87,31 @@ const QImage &GlyphMaterial::glyph(QChar ch) {
         r = std::clamp(100 + 155 * shade + 125 * rim, 0., 255.);
         g = std::clamp(24 + 171 * shade + 190 * rim, 0., 255.);
         b = std::clamp(4 + 64 * shade + 160 * rim, 0., 255.);
+        if (refine16_) {
+          // Narrow bevel: opposed normals give a pale upper-left facet and
+          // copper lower-right facet. The environment reflection bends with
+          // those normals rather than applying one flat color to the glyph.
+          const double facing = std::clamp(-nx * .55 - ny * .83, -1., 1.);
+          const double facet = std::exp(-std::max(0., d) / .48);
+          const double reflectedV = v + .10 * ny * facet;
+          const double reflection =
+              std::exp(-square((reflectedV - .35) / .075));
+          const double returnLight =
+              std::exp(-square((reflectedV - .80) / .14));
+          const double lit = std::max(0., facing) * facet;
+          const double shadow = std::max(0., -facing) * facet;
+          const double contour = edge_ * std::exp(-std::abs(d) / .32) *
+                                 (.18 + .82 * std::max(0., facing));
+          r = std::clamp(175 + 65 * reflection + 32 * returnLight + 70 * lit -
+                             65 * shadow + 100 * contour,
+                         0., 255.);
+          g = std::clamp(82 + 135 * reflection + 50 * returnLight + 115 * lit -
+                             48 * shadow + 150 * contour,
+                         0., 255.);
+          b = std::clamp(15 + 150 * reflection + 18 * returnLight + 95 * lit -
+                             10 * shadow + 155 * contour,
+                         0., 255.);
+        }
         // Separate glow outside the actual mask; zero glow leaves all
         // pixels outside glyph coverage exactly transparent.
         const double halo =

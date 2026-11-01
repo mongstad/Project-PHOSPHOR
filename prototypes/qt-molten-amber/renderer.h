@@ -7,7 +7,8 @@
 // Disposable, glyph-only material cache. No terminal state or frame recoloring.
 class GlyphMaterial {
 public:
-  GlyphMaterial(int points, qreal dpr, bool effects, double edge, double glow);
+  GlyphMaterial(int points, qreal dpr, bool effects, double edge, double glow,
+                bool refine16 = false);
   const QImage &glyph(QChar character);
   void text(QPainter &painter, QPointF origin, const QString &text);
   qreal cell() const { return cell_; }
@@ -18,7 +19,7 @@ public:
 private:
   QFont font_;
   qreal dpr_, cell_, line_, ascent_, padding_ = 5;
-  bool effects_;
+  bool effects_, refine16_;
   double edge_, glow_;
   QMap<ushort, QImage> cache_;
 };

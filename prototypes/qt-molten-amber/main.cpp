@@ -28,7 +28,7 @@ public:
 class Sample : public QQuickPaintedItem {
 public:
   int points = 14, revision = 0;
-  bool effects = true;
+  bool effects = true, refine16 = false;
   double edge = 1, glow = 1;
   std::unique_ptr<GlyphMaterial> material;
   qreal lastDpr = 0;
@@ -41,8 +41,8 @@ public:
     timer.start();
     const qreal dpr = window()->devicePixelRatio();
     if (!material || lastDpr != dpr) {
-      material =
-          std::make_unique<GlyphMaterial>(points, dpr, effects, edge, glow);
+      material = std::make_unique<GlyphMaterial>(points, dpr, effects, edge,
+                                                 glow, refine16);
       lastDpr = dpr;
       qInfo() << "glyph cache rebuild; DPR" << dpr << "font" << material->font()
               << "cell" << material->cell() << "line" << material->line();
@@ -102,6 +102,7 @@ int main(int argc, char **argv) {
   cli.addHelpOption();
   cli.addOptions(
       {{"baseline", "Disable all material effects"},
+       {"refine-16", "Opt-in 16 pt material refinement (requires --points 16)"},
        {"points", "Font size: 12..16 pt", "points", "14"},
        {"edge", "Edge intensity 0..2", "edge", "1"},
        {"glow", "Glow intensity 0..2", "glow", "1"},
@@ -147,6 +148,13 @@ int main(int argc, char **argv) {
   }
   Sample sample(window.contentItem());
   sample.points = integer("points", 12, 16);
+  sample.refine16 = cli.isSet("refine-16");
+  if (sample.refine16 && (sample.points != 16 || cli.isSet("baseline"))) {
+    qCritical() << "--refine-16 requires --points 16 and material enabled";
+    return 2;
+  }
+  qInfo() << "MATERIAL VARIANT"
+          << (sample.refine16 ? "refined-16" : "original");
   sample.effects = !cli.isSet("baseline");
   sample.edge = intensity("edge");
   sample.glow = intensity("glow");

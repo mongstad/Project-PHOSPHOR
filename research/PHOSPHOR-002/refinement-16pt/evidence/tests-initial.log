@@ -1,0 +1,22 @@
+Test project /tmp/phosphor-002/clang-build
+    Start 1: glyph-material
+1/1 Test #1: glyph-material ...................Subprocess aborted***Exception:  10.34 sec
+PASS 12 pt DPR 1
+PASS 12 pt DPR 1.5
+PASS 12 pt DPR 2
+PASS 14 pt DPR 1
+PASS 14 pt DPR 1.5
+PASS 14 pt DPR 2
+PASS 16 pt DPR 1
+PASS 16 pt DPR 1.5
+PASS 16 pt DPR 2
+refinement changes exterior glow
+
+
+0% tests passed, 1 tests failed out of 1
+
+Total Test time (real) =  10.34 sec
+
+The following tests FAILED:
+	  1 - glyph-material (Subprocess aborted)
+Errors while running CTest

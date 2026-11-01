@@ -1,5 +1,9 @@
 # PHOSPHOR-002 — Qt molten-glyph feasibility result
 
+Follow-up authorized by the owner: [bounded 16 pt material refinement](refinement-16pt/REPORT.md).
+The original results below remain preserved; the follow-up retains the original
+default and recommends stopping after one modest-gain candidate.
+
 **Recommendation: NO-GO for advancing this tested renderer into full PHOSPHOR
 development. Owner aesthetic review remains decisive.**
 

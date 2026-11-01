@@ -54,3 +54,10 @@ Cache rebuilding is synchronous and expensive; whole-surface image uploads are
 not a production renderer. Unicode support is intentionally limited to BMP
 code points in the fixture, without cluster shaping/width logic. See the report
 for measured performance, visual gaps, compiler limits and the gate decision.
+
+## Bounded 16 pt refinement
+
+`--points 16 --refine-16` opts into a single stronger interior/bevel/rim candidate.
+Omit `--refine-16` to reproduce the original material; its default appearance is
+unchanged. The flag rejects other point sizes and `--baseline`. Glow and geometry
+are shared. See the [matched native comparison and stop recommendation](../../research/PHOSPHOR-002/refinement-16pt/REPORT.md).

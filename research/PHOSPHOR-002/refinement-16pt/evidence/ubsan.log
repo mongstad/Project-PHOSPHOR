@@ -1,0 +1,31 @@
+[1/6] Building CXX object CMakeFiles/molten.dir/renderer.cpp.o
+clang++: warning: argument unused during compilation: '-L/tmp/phosphor-002/sysroot/usr/lib64' [-Wunused-command-line-argument]
+[2/6] Linking CXX static library libmolten.a
+[3/6] Building CXX object CMakeFiles/renderer-tests.dir/tests.cpp.o
+clang++: warning: argument unused during compilation: '-L/tmp/phosphor-002/sysroot/usr/lib64' [-Wunused-command-line-argument]
+[4/6] Linking CXX executable renderer-tests
+[5/6] Building CXX object CMakeFiles/phosphor-002.dir/main.cpp.o
+clang++: warning: argument unused during compilation: '-L/tmp/phosphor-002/sysroot/usr/lib64' [-Wunused-command-line-argument]
+[6/6] Linking CXX executable phosphor-002
+Test project /tmp/phosphor-002/ubsan-build
+    Start 1: glyph-material
+1/1 Test #1: glyph-material ...................Subprocess aborted***Exception:  12.22 sec
+PASS 12 pt DPR 1
+PASS 12 pt DPR 1.5
+PASS 12 pt DPR 2
+PASS 14 pt DPR 1
+PASS 14 pt DPR 1.5
+PASS 14 pt DPR 2
+PASS 16 pt DPR 1
+PASS 16 pt DPR 1.5
+PASS 16 pt DPR 2
+refinement changes exterior glow
+
+
+0% tests passed, 1 tests failed out of 1
+
+Total Test time (real) =  12.22 sec
+
+The following tests FAILED:
+	  1 - glyph-material (Subprocess aborted)
+Errors while running CTest
