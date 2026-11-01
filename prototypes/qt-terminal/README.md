@@ -115,3 +115,8 @@ harness also accepts timestamped `mouse` (`press`, `move`, `release`, `x`, `y`;
 `thumb: true` targets the current thumb center) and `wheel` angle-delta actions.
 Its key, mouse and wheel events route through the window; actions use precise
 timers to preserve order for closely spaced input events.
+
+The scrollbar's Molten Amber styling uses a restrained gold/copper bevel and
+local illuminated edges. Hover brightens it; press/drag adds a clearer highlight.
+All layers stay inside the existing gutter, with no animation or glyph changes.
+[Styling screenshots and validation](../../research/PHOSPHOR-016/styling/REPORT.md).

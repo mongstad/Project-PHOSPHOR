@@ -147,6 +147,7 @@ TerminalView::TerminalView(QQuickItem *p, Terminal &t, RenderMetrics &m)
   setFlag(ItemIsFocusScope);
   setClip(true);
   setAcceptedMouseButtons(Qt::AllButtons);
+  setAcceptHoverEvents(true);
   setFocus(true);
   GlyphMaterial metrics(16, 1, true, 1, 1, true);
   cell_ = metrics.cell();
@@ -170,6 +171,7 @@ void TerminalView::mousePressEvent(QMouseEvent *e) {
     e->ignore();
     return;
   }
+  pressed_ = true;
   forceActiveFocus(Qt::MouseFocusReason);
   const auto thumb = scrollThumb();
   if (!terminal_.alternateScreen() && terminal_.historySize()) {
@@ -198,10 +200,27 @@ void TerminalView::mouseMoveEvent(QMouseEvent *e) {
   e->accept();
 }
 void TerminalView::mouseReleaseEvent(QMouseEvent *e) {
-  dragging_ = false;
+  dragging_ = pressed_ = false;
+  update();
   e->accept();
 }
-void TerminalView::mouseUngrabEvent() { dragging_ = false; }
+void TerminalView::mouseUngrabEvent() {
+  dragging_ = pressed_ = false;
+  update();
+}
+void TerminalView::hoverMoveEvent(QHoverEvent *e) {
+  const bool oldTrack = hovering_ && scrollTrack().contains(hoverPosition_);
+  const bool oldThumb = hovering_ && scrollThumb().contains(hoverPosition_);
+  hovering_ = true;
+  hoverPosition_ = e->position();
+  if (oldTrack != scrollTrack().contains(hoverPosition_) ||
+      oldThumb != scrollThumb().contains(hoverPosition_))
+    update();
+}
+void TerminalView::hoverLeaveEvent(QHoverEvent *) {
+  hovering_ = false;
+  update();
+}
 void TerminalView::wheelEvent(QWheelEvent *e) {
   terminal_.scroll(e->angleDelta().y() / 120 * 3);
   update();
@@ -335,9 +354,39 @@ QSGNode *TerminalView::updatePaintNode(QSGNode *old, UpdatePaintNodeData *) {
                            c.foreground);
     }
   solid(root, backgrounds);
-  solid(root, {{scrollTrack(), QColor(28, 21, 12)},
-               {scrollThumb(), terminal_.alternateScreen() || !terminal_.historySize()
-                                   ? QColor(65, 49, 29) : QColor(142, 103, 48)}});
+  // Opaque, preblended amber layers stay inside the existing right gutter.
+  // No blur pass, glyph-material change, animation or additional texture upload.
+  const auto track = scrollTrack(), thumb = scrollThumb();
+  const bool enabled = !terminal_.alternateScreen() && terminal_.historySize();
+  const bool overTrack = hovering_ && track.contains(hoverPosition_);
+  const bool overThumb = hovering_ && thumb.contains(hoverPosition_);
+  const bool active = enabled && (dragging_ || pressed_);
+  const qreal light = !enabled ? .35 : active ? 1.25 : overThumb ? 1.1 : .85;
+  auto amber = [light](int r, int g, int b) {
+    return QColor(std::min(255, qRound(r * light)),
+                  std::min(255, qRound(g * light)),
+                  std::min(255, qRound(b * light)));
+  };
+  std::vector<std::pair<QRectF, QColor>> bar = {
+      {track, QColor(20, 14, 7)},
+      {QRectF(track.x(), track.y(), 1, track.height()),
+       enabled && (overTrack || active) ? QColor(72, 43, 14) : QColor(39, 25, 11)},
+      {QRectF(track.right() - 1, track.y(), 1, track.height()), QColor(35, 23, 10)}};
+  if (enabled) {
+    // Two restrained halo steps; lateral extent is only two extra pixels.
+    bar.emplace_back(thumb.adjusted(-2, 0, 2, 0), amber(22, 13, 5));
+    bar.emplace_back(thumb.adjusted(-1, 0, 1, 0), amber(46, 27, 8));
+  }
+  bar.emplace_back(thumb, amber(130, 76, 22));
+  // Narrow metal bevel: lit left edge, gold core, copper shaded right edge.
+  const QColor bands[] = {amber(244, 181, 78), amber(199, 125, 37),
+                          amber(166, 91, 23), amber(119, 61, 15)};
+  for (int band = 0; band < 4; ++band)
+    bar.emplace_back(QRectF(thumb.x() + 1 + band * 2, thumb.y() + 1,
+                           2, std::max(qreal(0), thumb.height() - 2)), bands[band]);
+  bar.emplace_back(QRectF(thumb.x() + 1, thumb.y(), 8, 1), amber(255, 202, 110));
+  bar.emplace_back(QRectF(thumb.x() + 1, thumb.bottom() - 1, 8, 1), amber(84, 43, 12));
+  solid(root, bar);
   // Preserve row/glyph order across page switches and bounded batches.
   int current = -1;
   std::vector<Vertex> vertices;

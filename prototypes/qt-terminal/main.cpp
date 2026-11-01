@@ -217,7 +217,8 @@ int main(int argc, char **argv) {
               : QPointF(a["x"].toDouble(), a["y"].toDouble());
           QMouseEvent e(type, point, window.mapToGlobal(point.toPoint()),
                         type == QEvent::MouseMove ? Qt::NoButton : Qt::LeftButton,
-                        type == QEvent::MouseButtonRelease ? Qt::NoButton : Qt::LeftButton,
+                        type == QEvent::MouseButtonRelease || kind == "hover"
+                            ? Qt::NoButton : Qt::LeftButton,
                         Qt::NoModifier);
           e.setTimestamp(elapsed.elapsed());
           QCoreApplication::sendEvent(&window, &e);

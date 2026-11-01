@@ -1,0 +1,11 @@
+[  6%] Built target terminal-view_resources_1
+[ 25%] Built target terminal-core
+[ 31%] Building CXX object CMakeFiles/terminal-view.dir/view.cpp.o
+[ 37%] Linking CXX static library libterminal-view.a
+[ 75%] Built target terminal-view
+[ 81%] Building CXX object CMakeFiles/phosphor-terminal.dir/main.cpp.o
+[ 87%] Building CXX object CMakeFiles/terminal-tests.dir/tests.cpp.o
+[ 93%] Linking CXX executable terminal-tests
+[ 93%] Built target terminal-tests
+[100%] Linking CXX executable phosphor-terminal
+[100%] Built target phosphor-terminal

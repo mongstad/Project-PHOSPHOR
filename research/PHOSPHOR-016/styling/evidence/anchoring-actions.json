@@ -1,0 +1,71 @@
+[
+  {
+    "ms": 300,
+    "text": "python3 -c 'import time; [(print(i, flush=True), time.sleep(.01)) for i in range(550)]'"
+  },
+  {
+    "ms": 400,
+    "key": "Return"
+  },
+  {
+    "ms": 1900,
+    "key": "PageUp",
+    "shift": true
+  },
+  {
+    "ms": 2200,
+    "capture": "/home/Nozba/Codex/Project-PHOSPHOR/Project-PHOSPHOR/research/PHOSPHOR-016/styling/evidence/anchor-before.png",
+    "dump": "/home/Nozba/Codex/Project-PHOSPHOR/Project-PHOSPHOR/research/PHOSPHOR-016/styling/evidence/anchor-before.txt",
+    "metrics": "/home/Nozba/Codex/Project-PHOSPHOR/Project-PHOSPHOR/research/PHOSPHOR-016/styling/evidence/anchor-before.json"
+  },
+  {
+    "ms": 3300,
+    "capture": "/home/Nozba/Codex/Project-PHOSPHOR/Project-PHOSPHOR/research/PHOSPHOR-016/styling/evidence/anchor-after.png",
+    "dump": "/home/Nozba/Codex/Project-PHOSPHOR/Project-PHOSPHOR/research/PHOSPHOR-016/styling/evidence/anchor-after.txt",
+    "metrics": "/home/Nozba/Codex/Project-PHOSPHOR/Project-PHOSPHOR/research/PHOSPHOR-016/styling/evidence/anchor-after.json"
+  },
+  {
+    "ms": 3900,
+    "mouse": "press",
+    "thumb": true
+  },
+  {
+    "ms": 4100,
+    "mouse": "move",
+    "x": 1271,
+    "y": 1000
+  },
+  {
+    "ms": 4300,
+    "mouse": "release",
+    "x": 1271,
+    "y": 1000
+  },
+  {
+    "ms": 5000,
+    "key": "PageDown",
+    "shift": true
+  },
+  {
+    "ms": 4500,
+    "metrics": "/home/Nozba/Codex/Project-PHOSPHOR/Project-PHOSPHOR/research/PHOSPHOR-016/styling/evidence/drag-live.json"
+  },
+  {
+    "ms": 6200,
+    "text": "echo FOCUS_OK"
+  },
+  {
+    "ms": 6400,
+    "key": "Return"
+  },
+  {
+    "ms": 7000,
+    "capture": "/home/Nozba/Codex/Project-PHOSPHOR/Project-PHOSPHOR/research/PHOSPHOR-016/styling/evidence/focus.png",
+    "dump": "/home/Nozba/Codex/Project-PHOSPHOR/Project-PHOSPHOR/research/PHOSPHOR-016/styling/evidence/focus.txt",
+    "metrics": "/home/Nozba/Codex/Project-PHOSPHOR/Project-PHOSPHOR/research/PHOSPHOR-016/styling/evidence/focus.json"
+  },
+  {
+    "ms": 7500,
+    "close": true
+  }
+]

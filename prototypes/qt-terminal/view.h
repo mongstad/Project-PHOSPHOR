@@ -23,12 +23,16 @@ protected:
   void mouseMoveEvent(QMouseEvent *e) override;
   void mouseReleaseEvent(QMouseEvent *e) override;
   void mouseUngrabEvent() override;
+  void hoverEnterEvent(QHoverEvent *e) override { hoverMoveEvent(e); }
+  void hoverMoveEvent(QHoverEvent *e) override;
+  void hoverLeaveEvent(QHoverEvent *e) override;
   void wheelEvent(QWheelEvent *e) override;
 
 private:
   Terminal &terminal_;
   RenderMetrics &metrics_;
   qreal cell_, line_;
-  bool dragging_ = false;
+  bool dragging_ = false, pressed_ = false, hovering_ = false;
+  QPointF hoverPosition_;
   qreal grabFraction_ = 0;
 };
