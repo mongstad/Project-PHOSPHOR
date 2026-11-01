@@ -1,0 +1,7 @@
+54b012ecaed702db1fabf109f035af66088eaee216cd5c413378746d70439af2  prototypes/qt-molten-amber/CMakeLists.txt
+a7fc8d8ce06198cca844b4785d4349cfabd70ba181b8e5fee4a2a82528e6a19e  prototypes/qt-molten-amber/README.md
+9c0a501b71a0ab9954ea38ad4775372b72b34fec6fd7bbb5a1719845e5abe99b  prototypes/qt-molten-amber/main.cpp
+a5506576fbde1983b6a9cd2207c35bdac8059ec2b315100028aff1fb67b0d319  prototypes/qt-molten-amber/renderer.cpp
+eb43c6119bed70dc0bac9d7fa1ee5f9726271fbf13a1812a3250c9e49b45d948  prototypes/qt-molten-amber/renderer.h
+4942c97d8e6d65720f2f62ccb5cd69e94bf76c70fed7534759d0a6d55a66d7e0  prototypes/qt-molten-amber/tests.cpp
+550d2f56148f211b3110e7496f1089f34ad71fbf823d05a4cf516fad1b414850  /tmp/phosphor-002/clang-build/phosphor-002

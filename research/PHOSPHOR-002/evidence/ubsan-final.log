@@ -1,0 +1,16 @@
+[1/6] Building CXX object CMakeFiles/molten.dir/renderer.cpp.o
+clang++: warning: argument unused during compilation: '-L/tmp/phosphor-002/sysroot/usr/lib64' [-Wunused-command-line-argument]
+[2/6] Linking CXX static library libmolten.a
+[3/6] Building CXX object CMakeFiles/renderer-tests.dir/tests.cpp.o
+clang++: warning: argument unused during compilation: '-L/tmp/phosphor-002/sysroot/usr/lib64' [-Wunused-command-line-argument]
+[4/6] Linking CXX executable renderer-tests
+[5/6] Building CXX object CMakeFiles/phosphor-002.dir/main.cpp.o
+clang++: warning: argument unused during compilation: '-L/tmp/phosphor-002/sysroot/usr/lib64' [-Wunused-command-line-argument]
+[6/6] Linking CXX executable phosphor-002
+Test project /tmp/phosphor-002/ubsan-build
+    Start 1: glyph-material
+1/1 Test #1: glyph-material ...................   Passed   11.81 sec
+
+100% tests passed, 0 tests failed out of 1
+
+Total Test time (real) =  11.81 sec
