@@ -1,0 +1,64 @@
+PHOSPHOR-001 environment inspection, 2026-11-01
+These are environment observations, not rendering/performance results.
+
+$ command -v ghostty
+[no path returned]
+
+$ rpm -q ghostty
+package ghostty is not installed
+
+$ flatpak list --app --columns=application,version
+com.github.Matoking.protontricks  1.15.0
+io.podman_desktop.PodmanDesktop  1.30.5
+md.obsidian.Obsidian             1.14.5
+net.giuspen.cherrytree           b'1.7.2'
+
+$ find /home/Nozba/.local/bin /usr/local/bin /opt -maxdepth 3 -iname '*ghostty*' -print
+[no matches returned; not an exhaustive whole-filesystem search]
+
+$ uname -srmo
+Linux 7.2.13-200.fc44.x86_64 x86_64 GNU/Linux
+
+Relevant /etc/os-release fields:
+PRETTY_NAME="Fedora Linux 44 (KDE Plasma Desktop Edition)"
+VERSION_ID=44
+
+$ printenv XDG_SESSION_TYPE WAYLAND_DISPLAY DISPLAY XDG_CURRENT_DESKTOP
+wayland
+wayland-0
+:0
+KDE
+
+$ fc-match monospace
+NotoSansMono-Regular.ttf: "Noto Sans Mono" "Regular"
+
+$ rpm -q gtk4 libadwaita gtk4-layer-shell plasma-workspace
+gtk4-4.22.5-2.fc44.x86_64
+libadwaita-1.9.4-1.fc44.x86_64
+package gtk4-layer-shell is not installed
+plasma-workspace-6.7.5-1.fc44.x86_64
+
+$ rpm -qf /lib64/libshaderc_shared.so.1
+libshaderc-2026.1-1.fc44.x86_64
+
+Sandboxed nvidia-smi: failed to communicate with NVIDIA driver.
+Sandboxed kscreen-doctor: aborted. The same read-only checks succeeded on host.
+
+Host command:
+$ nvidia-smi --query-gpu=name,driver_version,memory.total --format=csv,noheader
+NVIDIA GeForce RTX 3070 Ti, 615.78.08, 8192 MiB
+
+Host kscreen-doctor -o, relevant fields transcribed; other modes/IDs omitted:
+DP-2: enabled, current 1920x1080@143.98, geometry 2560,360 1920x1080, scale 1.
+DP-1: enabled, current 2560x1440@144.00, geometry 0,0 2560x1440, scale 1.
+HDMI-A-1: connected but disabled; listed mode 3840x2160@30.00.
+No display setting was changed. No native 4K surface was tested.
+
+Pinned research checkout:
+$ git -C /tmp/phosphor-001-ghostty-source rev-parse HEAD
+83fb95624b0439ee660c2679b43b38c8b63769cd
+$ sha256sum src/renderer/shaders/shadertoy_prefix.glsl
+8cb58b8bc941a1b3c9951e6102d61faf8f27080806e46572a97efdce4001a254
+
+No Ghostty binary or dependencies were installed. No Konsole/default-terminal
+configuration changes were made. Source inspection is not a native runtime test.
