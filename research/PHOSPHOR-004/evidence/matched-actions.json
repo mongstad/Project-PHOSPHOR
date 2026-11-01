@@ -1,0 +1,20 @@
+[
+  {
+    "ms": 500,
+    "text": "cat '/home/Nozba/Codex/Project-PHOSPHOR/Project-PHOSPHOR/research/PHOSPHOR-004/evidence/fixture.txt'; sleep 8"
+  },
+  {
+    "ms": 530,
+    "key": "Return"
+  },
+  {
+    "ms": 2000,
+    "capture": "/home/Nozba/Codex/Project-PHOSPHOR/Project-PHOSPHOR/research/PHOSPHOR-004/evidence/matched-client.png",
+    "dump": "/home/Nozba/Codex/Project-PHOSPHOR/Project-PHOSPHOR/research/PHOSPHOR-004/evidence/matched-screen.txt",
+    "metrics": "/home/Nozba/Codex/Project-PHOSPHOR/Project-PHOSPHOR/research/PHOSPHOR-004/evidence/matched-snapshot.json"
+  },
+  {
+    "ms": 3500,
+    "close": true
+  }
+]

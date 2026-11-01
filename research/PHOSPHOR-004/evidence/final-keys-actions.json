@@ -1,0 +1,52 @@
+[
+  {
+    "ms": 500,
+    "text": "clear; printf '\\033[44m\u4e2d \ud83d\ude00\\033[0m wide replacements\\n'; printf 'New glyphs: \u0416 \u0429 \u042f\\n'"
+  },
+  {
+    "ms": 530,
+    "key": "Return"
+  },
+  {
+    "ms": 1300,
+    "text": "printf '%s\\n' /tmp/phosphor-004/completion-o"
+  },
+  {
+    "ms": 1400,
+    "key": "Tab"
+  },
+  {
+    "ms": 1500,
+    "key": "Return"
+  },
+  {
+    "ms": 1900,
+    "text": "echo finax"
+  },
+  {
+    "ms": 2000,
+    "key": "Backspace"
+  },
+  {
+    "ms": 2100,
+    "text": "l"
+  },
+  {
+    "ms": 2200,
+    "key": "Return"
+  },
+  {
+    "ms": 2900,
+    "capture": "/home/Nozba/Codex/Project-PHOSPHOR/Project-PHOSPHOR/research/PHOSPHOR-004/evidence/final-keys-client.png",
+    "dump": "/home/Nozba/Codex/Project-PHOSPHOR/Project-PHOSPHOR/research/PHOSPHOR-004/evidence/final-keys-screen.txt",
+    "metrics": "/home/Nozba/Codex/Project-PHOSPHOR/Project-PHOSPHOR/research/PHOSPHOR-004/evidence/final-keys-snapshot.json"
+  },
+  {
+    "ms": 3700,
+    "text": "exit"
+  },
+  {
+    "ms": 3730,
+    "key": "Return"
+  }
+]

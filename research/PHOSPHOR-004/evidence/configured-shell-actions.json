@@ -1,0 +1,24 @@
+[
+  {
+    "ms": 800,
+    "text": "pwd; echo CONFIGURED_SHELL_OK"
+  },
+  {
+    "ms": 830,
+    "key": "Return"
+  },
+  {
+    "ms": 2100,
+    "capture": "/home/Nozba/Codex/Project-PHOSPHOR/Project-PHOSPHOR/research/PHOSPHOR-004/evidence/configured-shell-client.png",
+    "dump": "/home/Nozba/Codex/Project-PHOSPHOR/Project-PHOSPHOR/research/PHOSPHOR-004/evidence/configured-shell-screen.txt",
+    "metrics": "/home/Nozba/Codex/Project-PHOSPHOR/Project-PHOSPHOR/research/PHOSPHOR-004/evidence/configured-shell-snapshot.json"
+  },
+  {
+    "ms": 3000,
+    "text": "exit"
+  },
+  {
+    "ms": 3030,
+    "key": "Return"
+  }
+]

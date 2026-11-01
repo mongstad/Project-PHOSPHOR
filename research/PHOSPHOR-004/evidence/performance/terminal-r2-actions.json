@@ -1,0 +1,42 @@
+[
+  {
+    "ms": 700,
+    "text": "clear; printf 'PHOSPHOR IDLE\\n'"
+  },
+  {
+    "ms": 730,
+    "key": "Return"
+  },
+  {
+    "ms": 1500,
+    "metrics": "/home/Nozba/Codex/Project-PHOSPHOR/Project-PHOSPHOR/research/PHOSPHOR-004/evidence/performance/terminal-r2-idle-start.json"
+  },
+  {
+    "ms": 9000,
+    "text": "python3 '/home/Nozba/Codex/Project-PHOSPHOR/Project-PHOSPHOR/research/PHOSPHOR-004/evidence/performance/producer.py'"
+  },
+  {
+    "ms": 9030,
+    "key": "Return"
+  },
+  {
+    "ms": 10000,
+    "metrics": "/home/Nozba/Codex/Project-PHOSPHOR/Project-PHOSPHOR/research/PHOSPHOR-004/evidence/performance/terminal-r2-update-start.json"
+  },
+  {
+    "ms": 12000,
+    "capture": "/home/Nozba/Codex/Project-PHOSPHOR/Project-PHOSPHOR/research/PHOSPHOR-004/evidence/performance/terminal-r2-client.png"
+  },
+  {
+    "ms": 18000,
+    "metrics": "/home/Nozba/Codex/Project-PHOSPHOR/Project-PHOSPHOR/research/PHOSPHOR-004/evidence/performance/terminal-r2-update-end.json"
+  },
+  {
+    "ms": 21000,
+    "text": "exit"
+  },
+  {
+    "ms": 21030,
+    "key": "Return"
+  }
+]

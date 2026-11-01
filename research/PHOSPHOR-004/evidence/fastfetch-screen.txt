@@ -1,0 +1,26 @@
+Host: KomplettPC                                                                                 
+Kernel: Linux 7.2.13-200.fc44.x86_64                                                             
+Uptime: 13 hours, 27 mins                                                                        
+Packages: 23 (flatpak), 3100 (rpm)                                                               
+Shell: bash 5.3.9                                                                                
+Display (LC32G7xT): 2560x1440 in 32", 144 Hz [External] *                                        
+Display (LS24AG30x): 1920x1080 in 24", 144 Hz [External]                                         
+Desktop Environment: KDE Plasma 6.7.5                                                            
+Window Manager: KWin (Wayland)                                                                   
+WM Theme: BonaFides-Blur-Color-Dark-Aurorae-6                                                    
+Theme: Breeze (SweetAmbarBlue) [Qt], Breeze-Dark [GTK2], Breeze [GTK3/4]                         
+Icons: Slot-Beauty-Dark-Icons [Qt], Slot-Beauty-Dark-Icons [GTK2/3/4]                            
+Font: Noto Sans (10pt) [Qt], Noto Sans (10pt) [GTK2/3/4]                                         
+Cursor: Sweet (24px)                                                                             
+Terminal: phosphor-terminal                                                                      
+CPU: AMD Ryzen 7 5800X (16) @ 4.85 GHz                                                           
+GPU: NVIDIA GeForce RTX 3070 Ti [Discrete]                                                       
+Memory: 15.92 GiB / 46.94 GiB (34%)                                                              
+Swap: 923.04 MiB / 8.00 GiB (11%)                                                                
+Disk (/): 660.51 GiB / 1.82 TiB (35%) - btrfs                                                    
+Local IP (proton0): 10.2.0.2/32                                                                  
+Locale: C.UTF-8                                                                                  
+                                                                                                 
+                                                                                                 
+                                                                                                 
+phosphor$                                                                                        

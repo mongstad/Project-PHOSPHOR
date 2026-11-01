@@ -1,0 +1,24 @@
+qt.scenegraph.general: basic render loop
+qt.scenegraph.general: Using sg animation driver
+GEOMETRY QSize(1920, 1080) GRID 148 31 DPR 1
+GEOMETRY QSize(1920, 1080) GRID 148 31 DPR 1
+GEOMETRY QSize(1920, 1080) GRID 148 31 DPR 1
+SHELL_PID 139646 SHELL "/bin/bash" ARGS QList("--noprofile", "--norc", "-i")
+qt.scenegraph.general: Creating QRhi with backend OpenGL for window 0x7ffc47708260 (wflags 0x1)
+  Graphics API debug/validation layers: 0
+  Debug markers: 0
+  Timestamps: 0
+  Prefer software device: 0
+  Shader/pipeline cache collection: 1
+qt.scenegraph.general: Created QRhi 0x55e526b5e0e0 for window 0x7ffc47708260
+qt.scenegraph.general: Attempting to seed pipeline cache for QRhi 0x55e526b5e0e0 from '/tmp/phosphor-004/cache/phosphor-terminal/qtpipelinecache-x86_64-little_endian-lp64/qqpc_opengl'
+qt.scenegraph.general: rhi texture atlas dimensions: 2048x2048
+BACKEND 3
+qt.scenegraph.general: MSAA sample count for the swapchain is 1. Alpha channel requested = no
+FIRST_FRAME_MS 1148
+qt.qpa.services: Failed to register with host portal QDBusError("org.freedesktop.portal.Error.Failed", "Could not register app ID: App info not found for 'org.phosphor.Terminal004'")
+CAPTURE QSize(1920, 1080)
+SHELL_EXIT 0
+SUMMARY {"cached_glyphs":132,"columns":148,"dpr":1,"elapsed_ms":21748,"fallback_cells":0,"first_frame_ms":1148,"height":1080,"history_lines":1000,"parse_ms":86.552488,"read_bytes":1763910,"render_calls":323,"render_work_ms":1322.719238,"rows":31,"scroll_offset":0,"texture_bytes":1152000,"width":1920}
+qt.scenegraph.general: Total time spent on pipeline creation during the lifetime of the QRhi 0x55e526b5e0e0 was 1 ms
+qt.scenegraph.general: Writing pipeline cache contents (19016 bytes) for QRhi 0x55e526b5e0e0 to '/tmp/phosphor-004/cache/phosphor-terminal/qtpipelinecache-x86_64-little_endian-lp64/qqpc_opengl'

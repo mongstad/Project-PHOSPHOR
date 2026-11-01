@@ -1,0 +1,18 @@
+glyph.vert -> glyph.vert.qsb exposed as :/shaders/glyph.vert.qsb
+glyph.frag -> glyph.frag.qsb exposed as :/shaders/glyph.frag.qsb
+-- Configuring done (0.2s)
+-- Generating done (0.0s)
+-- Build files have been written to: /tmp/phosphor-004/clang-build
+[0/2] Re-checking globbed directories...
+[1/5] Building CXX object CMakeFiles/terminal-core.dir/terminal.cpp.o
+clang++: warning: argument unused during compilation: '-L/tmp/phosphor-002/sysroot/usr/lib64' [-Wunused-command-line-argument]
+[2/5] Linking CXX static library libterminal-core.a
+[3/5] Linking CXX executable terminal-tests
+[4/5] Linking CXX executable phosphor-terminal
+Test project /tmp/phosphor-004/clang-build
+    Start 1: terminal-core-pty
+1/1 Test #1: terminal-core-pty ................   Passed    0.59 sec
+
+100% tests passed, 0 tests failed out of 1
+
+Total Test time (real) =   0.59 sec

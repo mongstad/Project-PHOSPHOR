@@ -1,0 +1,24 @@
+Start testing: Nov 01 20:55 CET
+----------------------------------------------------------
+1/1 Testing: terminal-core-pty
+1/1 Test: terminal-core-pty
+Command: "/tmp/phosphor-004/ubsan-build/terminal-tests"
+Directory: /tmp/phosphor-004/ubsan-build
+"terminal-core-pty" start time: Nov 01 20:55 CET
+Output:
+----------------------------------------------------------
+PASS parser fragmentation, erase/movement, color, ignored strings, Unicode boundary, alternate screen, bounded scrollback
+PASS keyboard Qt events and application cursor mode
+PASS real interactive Bash, nonblocking output, resize, Ctrl+C, exit status/reaping
+PASS EOF with live subprocess cleanup
+PASS close kills HUP-resistant shell and background job
+ALL TESTS PASSED
+<end of output>
+Test time =   0.58 sec
+----------------------------------------------------------
+Test Passed.
+"terminal-core-pty" end time: Nov 01 20:55 CET
+"terminal-core-pty" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Nov 01 20:55 CET

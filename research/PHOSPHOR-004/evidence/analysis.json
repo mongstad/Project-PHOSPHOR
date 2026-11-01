@@ -1,0 +1,80 @@
+{
+  "performance": [
+    {
+      "path": "terminal",
+      "workload": "idle",
+      "samples": 10,
+      "cpu_one_core_pct": 0.09708465159886699,
+      "rss_kib": 153096.0,
+      "whole_gpu_pct": 20.1,
+      "power_w": 32.101
+    },
+    {
+      "path": "terminal",
+      "workload": "output",
+      "samples": 12,
+      "cpu_one_core_pct": 5.56903122191181,
+      "rss_kib": 189048.33333333334,
+      "whole_gpu_pct": 31.416666666666668,
+      "power_w": 20.4025
+    },
+    {
+      "path": "fixture",
+      "workload": "idle",
+      "samples": 10,
+      "cpu_one_core_pct": 0.0,
+      "rss_kib": 153472.0,
+      "whole_gpu_pct": 26.7,
+      "power_w": 28.081
+    },
+    {
+      "path": "fixture",
+      "workload": "output",
+      "samples": 12,
+      "cpu_one_core_pct": 3.306112870155062,
+      "rss_kib": 180617.66666666666,
+      "whole_gpu_pct": 30.25,
+      "power_w": 20.22083333333333
+    }
+  ],
+  "warm_deltas": [
+    {
+      "rep": 1,
+      "elapsed_ms": 8000,
+      "read_bytes": 1411480,
+      "parse_ms": 73.320563,
+      "render_calls": 249,
+      "render_work_ms": 215.3952099999999,
+      "texture_bytes": 0
+    },
+    {
+      "rep": 2,
+      "elapsed_ms": 7999,
+      "read_bytes": 1411480,
+      "parse_ms": 73.018915,
+      "render_calls": 249,
+      "render_work_ms": 216.60003600000005,
+      "texture_bytes": 0
+    }
+  ],
+  "visual": [
+    {
+      "name": "matched",
+      "different_pixels": 0,
+      "max_channel_delta": 0,
+      "size": [
+        1280,
+        900
+      ]
+    },
+    {
+      "name": "final-matched",
+      "different_pixels": 0,
+      "max_channel_delta": 0,
+      "size": [
+        1280,
+        900
+      ]
+    }
+  ]
+}

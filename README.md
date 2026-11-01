@@ -26,3 +26,9 @@ Issue #5 evaluates GPU composition of the accepted refined 16 pt material:
 [isolated CPU/GPU atlas prototype](prototypes/qt-gpu-atlas/README.md),
 [PHOSPHOR-003 measurements, screenshots and conditional recommendation](research/PHOSPHOR-003/REPORT.md).
 Owner review is required; no full terminal development is authorized by this experiment.
+
+Issue #7 adds a bounded interactive shell milestone using libvterm and a Linux
+PTY, preserving the accepted refined 16 pt GPU material:
+[build/run and supported behavior](prototypes/qt-terminal/README.md),
+[PHOSPHOR-004 validation, screenshots and limitations](research/PHOSPHOR-004/REPORT.md).
+This is a basic terminal for owner review, not a production replacement.

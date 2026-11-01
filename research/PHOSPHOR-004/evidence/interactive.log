@@ -1,0 +1,32 @@
+qt.scenegraph.general: basic render loop
+qt.scenegraph.general: Using sg animation driver
+GEOMETRY QSize(1280, 900) GRID 97 26 DPR 1
+GEOMETRY QSize(1280, 900) GRID 97 26 DPR 1
+GEOMETRY QSize(1280, 900) GRID 97 26 DPR 1
+SHELL_PID 138928 SHELL "/bin/bash" ARGS QList("--noprofile", "--norc", "-i")
+qt.qpa.services: Failed to register with host portal QDBusError("org.freedesktop.portal.Error.Failed", "Could not register app ID: App info not found for 'org.phosphor.Terminal004'")
+qt.scenegraph.general: Creating QRhi with backend OpenGL for window 0x7ffd611b4440 (wflags 0x1)
+  Graphics API debug/validation layers: 0
+  Debug markers: 0
+  Timestamps: 0
+  Prefer software device: 0
+  Shader/pipeline cache collection: 1
+qt.scenegraph.general: Created QRhi 0x560b532b9f80 for window 0x7ffd611b4440
+qt.scenegraph.general: Attempting to seed pipeline cache for QRhi 0x560b532b9f80 from '/tmp/phosphor-004/cache/phosphor-terminal/qtpipelinecache-x86_64-little_endian-lp64/qqpc_opengl'
+qt.scenegraph.general: rhi texture atlas dimensions: 2048x1024
+BACKEND 3
+qt.scenegraph.general: MSAA sample count for the swapchain is 1. Alpha channel requested = no
+FIRST_FRAME_MS 1141
+CAPTURE QSize(1280, 900)
+CAPTURE QSize(1280, 900)
+CAPTURE QSize(1280, 900)
+GEOMETRY QSize(800, 600) GRID 59 16 DPR 1
+GEOMETRY QSize(800, 600) GRID 59 16 DPR 1
+CAPTURE QSize(800, 600)
+GEOMETRY QSize(1280, 900) GRID 97 26 DPR 1
+GEOMETRY QSize(1280, 900) GRID 97 26 DPR 1
+CAPTURE QSize(1280, 900)
+SHELL_EXIT 0
+SUMMARY {"cached_glyphs":132,"columns":97,"dpr":1,"elapsed_ms":13705,"fallback_cells":0,"first_frame_ms":1141,"height":900,"history_lines":1000,"parse_ms":2.878618,"read_bytes":7229,"render_calls":34,"render_work_ms":1047.9275,"rows":26,"scroll_offset":0,"texture_bytes":1152000,"width":1280}
+qt.scenegraph.general: Total time spent on pipeline creation during the lifetime of the QRhi 0x560b532b9f80 was 0 ms
+qt.scenegraph.general: Writing pipeline cache contents (19016 bytes) for QRhi 0x560b532b9f80 to '/tmp/phosphor-004/cache/phosphor-terminal/qtpipelinecache-x86_64-little_endian-lp64/qqpc_opengl'

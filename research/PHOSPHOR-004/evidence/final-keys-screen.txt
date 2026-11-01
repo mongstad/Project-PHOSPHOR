@@ -1,0 +1,26 @@
+�  �  wide replacements                                                                          
+New glyphs: Ж Щ Я                                                                                
+phosphor$ printf '%s\n' /tmp/phosphor-004/completion-only                                        
+/tmp/phosphor-004/completion-only                                                                
+phosphor$ echo final                                                                             
+final                                                                                            
+phosphor$                                                                                        
+                                                                                                 
+                                                                                                 
+                                                                                                 
+                                                                                                 
+                                                                                                 
+                                                                                                 
+                                                                                                 
+                                                                                                 
+                                                                                                 
+                                                                                                 
+                                                                                                 
+                                                                                                 
+                                                                                                 
+                                                                                                 
+                                                                                                 
+                                                                                                 
+                                                                                                 
+                                                                                                 
+                                                                                                 
