@@ -1,0 +1,7 @@
+Test project /tmp/phosphor-003/ubsan-build
+    Start 1: glyph-atlas
+1/1 Test #1: glyph-atlas ......................   Passed   26.26 sec
+
+100% tests passed, 0 tests failed out of 1
+
+Total Test time (real) =  26.26 sec

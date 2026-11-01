@@ -1,0 +1,10 @@
+GEOMETRY 56 QSize(3840, 2160) DPR 1
+qt.qpa.services: Failed to register with host portal QDBusError("org.freedesktop.portal.Error.Failed", "Could not register app ID: App info not found for 'org.phosphor.Spike003'")
+GEOMETRY 61 QSize(1912, 1038) DPR 1
+GEOMETRY 61 QSize(1912, 1038) DPR 1
+BACKEND 3
+FIRST_FRAME_MS 1261
+GEOMETRY 1261 QSize(1912, 1038) DPR 1
+PRESENTATION "DP-2" QSize(1912, 1038) DPR 1 logicalDPI 96
+CAPTURE QSize(1912, 1038)
+SUMMARY {"cache_builds":1,"cache_wall_ms":1089.552516,"dpr":1,"effects":true,"elapsed_ms":10397,"first_frame_ms":1261,"frame_swapped":3,"geometry_bytes":392640,"height":1038,"path":"gpu","requested_texture_bytes":648000,"screen":"DP-2","synthetic_updates":0,"width":1912,"work_calls":2,"work_wall_ms":0.272565}

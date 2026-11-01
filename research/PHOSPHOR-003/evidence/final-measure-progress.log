@@ -1,0 +1,9 @@
+1080p-r1-cpu complete
+1080p-r1-gpu complete
+1080p-r2-gpu complete
+1080p-r2-cpu complete
+4k-buffer-r1-cpu complete
+4k-buffer-r1-gpu complete
+4k-buffer-r2-gpu complete
+4k-buffer-r2-cpu complete
+COMPLETE: 8 runs, 48 idle + 64 warm update samples; no monitor modes changed

@@ -1,0 +1,18 @@
+{
+    "cache_builds": 1,
+    "cache_wall_ms": 1091.00797,
+    "dpr": 1,
+    "effects": true,
+    "elapsed_ms": 29861,
+    "first_frame_ms": 1246,
+    "frame_swapped": 401,
+    "geometry_bytes": 0,
+    "height": 2160,
+    "path": "cpu",
+    "requested_texture_bytes": 13220562048,
+    "screen": "DP-2",
+    "synthetic_updates": 491,
+    "width": 3840,
+    "work_calls": 400,
+    "work_wall_ms": 9951.366503
+}
