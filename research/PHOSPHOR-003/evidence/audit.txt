@@ -1,0 +1,1 @@
+PASS preserved artwork/source/evidence hashes; unchanged display state; 8 final runs; matched captures; one cache across resize; native UBSan 4K completion

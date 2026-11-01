@@ -21,3 +21,8 @@ Issue #3 evaluates an isolated C++20/Qt 6 glyph-aware alternative:
 [prototype and run instructions](prototypes/qt-molten-amber/README.md),
 [PHOSPHOR-002 evidence and recommendation](research/PHOSPHOR-002/REPORT.md).
 This is a visual-only feasibility experiment, not a terminal implementation.
+
+Issue #5 evaluates GPU composition of the accepted refined 16 pt material:
+[isolated CPU/GPU atlas prototype](prototypes/qt-gpu-atlas/README.md),
+[PHOSPHOR-003 measurements, screenshots and conditional recommendation](research/PHOSPHOR-003/REPORT.md).
+Owner review is required; no full terminal development is authorized by this experiment.

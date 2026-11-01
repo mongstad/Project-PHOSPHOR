@@ -1,0 +1,33 @@
+Sun Nov  1 20:29:15 2026       
++-----------------------------------------------------------------------------------------+
+| NVIDIA-SMI 615.78.08              KMD Version: 615.78.08     CUDA UMD Version: 13.4     |
++-----------------------------------------+------------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id          Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |           Memory-Usage | GPU-Util  Compute M. |
+|                                         |                        |               MIG M. |
+|=========================================+========================+======================|
+|   0  NVIDIA GeForce RTX 3070 Ti     Off |   00000000:07:00.0  On |                  N/A |
+|  0%   61C    P0             48W /  290W |    1338MiB /   8192MiB |      1%      Default |
+|                                         |                        |                  N/A |
++-----------------------------------------+------------------------+----------------------+
+
++-----------------------------------------------------------------------------------------+
+| Processes:                                                                              |
+|  GPU   GI   CI              PID   Type   Process name                        GPU Memory |
+|        ID   ID                                                               Usage      |
+|=========================================================================================|
+|    0   N/A  N/A            1804    C+G   /usr/bin/kwin_wayland                   114MiB |
+|    0   N/A  N/A            1889      G   /usr/bin/plasma-keyboard                 86MiB |
+|    0   N/A  N/A            1897      G   /usr/bin/Xwayland                         4MiB |
+|    0   N/A  N/A            1963      G   /usr/bin/plasmashell                    115MiB |
+|    0   N/A  N/A            2254      G   /usr/bin/xwaylandvideobridge              3MiB |
+|    0   N/A  N/A            2256    C+G   /usr/bin/python3                          5MiB |
+|    0   N/A  N/A            2696      G   /usr/lib64/firefox/firefox               69MiB |
+|    0   N/A  N/A            8509      G   ...share/Steam/ubuntu12_32/steam          5MiB |
+|    0   N/A  N/A            8857      G   ./steamwebhelper                         35MiB |
+|    0   N/A  N/A            8885      G   ...am/ubuntu12_64/steamwebhelper         74MiB |
+|    0   N/A  N/A           23882      G   ...rack-uuid=3190708988185955192        123MiB |
+|    0   N/A  N/A           78575    C+G   ...rack-uuid=3190708988185955192        115MiB |
+|    0   N/A  N/A           80866    C+G   ...708988185955192 --log-level=3         55MiB |
+|    0   N/A  N/A          133137      G   ...-003/clang-build/phosphor-003          9MiB |
++-----------------------------------------------------------------------------------------+

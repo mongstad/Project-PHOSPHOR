@@ -1,0 +1,26 @@
+[
+  {
+    "id": "{b3042c96-420e-4d52-b6d4-7e6a5c9d4243}",
+    "pid": 129883,
+    "caption": "PHOSPHOR-003 | cpu | REFINED AMBER | 16 pt",
+    "resourceClass": "org.phosphor.Spike003",
+    "frame": {
+      "x": 2560,
+      "y": 360,
+      "width": 1920,
+      "height": 1080
+    },
+    "client": {
+      "x": 2560,
+      "y": 360,
+      "width": 1920,
+      "height": 1080
+    },
+    "buffer": {
+      "x": 2560,
+      "y": 360,
+      "width": 1920,
+      "height": 1080
+    }
+  }
+]

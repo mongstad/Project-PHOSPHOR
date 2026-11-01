@@ -1,0 +1,325 @@
+{
+  "performance": [
+    {
+      "resolution": "1080p",
+      "path": "cpu",
+      "workload": "idle",
+      "samples": 12,
+      "cpu_one_core_pct": 0.0,
+      "rss_kib": 190548.0,
+      "whole_gpu_pct": 17.416666666666668,
+      "power_w": 17.81
+    },
+    {
+      "resolution": "1080p",
+      "path": "cpu",
+      "workload": "update",
+      "samples": 16,
+      "cpu_one_core_pct": 32.17147906211142,
+      "rss_kib": 219285.5,
+      "whole_gpu_pct": 24.9375,
+      "power_w": 19.766875
+    },
+    {
+      "resolution": "1080p",
+      "path": "gpu",
+      "workload": "idle",
+      "samples": 12,
+      "cpu_one_core_pct": 0.0,
+      "rss_kib": 157772.0,
+      "whole_gpu_pct": 16.666666666666668,
+      "power_w": 17.975
+    },
+    {
+      "resolution": "1080p",
+      "path": "gpu",
+      "workload": "update",
+      "samples": 16,
+      "cpu_one_core_pct": 2.8803241354696776,
+      "rss_kib": 184945.25,
+      "whole_gpu_pct": 23.9375,
+      "power_w": 18.035625
+    },
+    {
+      "resolution": "4k-buffer",
+      "path": "cpu",
+      "workload": "idle",
+      "samples": 12,
+      "cpu_one_core_pct": 0.6665568721963621,
+      "rss_kib": 260118.0,
+      "whole_gpu_pct": 26.333333333333332,
+      "power_w": 18.411666666666665
+    },
+    {
+      "resolution": "4k-buffer",
+      "path": "cpu",
+      "workload": "update",
+      "samples": 16,
+      "cpu_one_core_pct": 88.6463897240818,
+      "rss_kib": 290876.0,
+      "whole_gpu_pct": 26.4375,
+      "power_w": 42.066874999999996
+    },
+    {
+      "resolution": "4k-buffer",
+      "path": "gpu",
+      "workload": "idle",
+      "samples": 12,
+      "cpu_one_core_pct": 0.6665418003250915,
+      "rss_kib": 167624.0,
+      "whole_gpu_pct": 24.416666666666668,
+      "power_w": 18.519166666666667
+    },
+    {
+      "resolution": "4k-buffer",
+      "path": "gpu",
+      "workload": "update",
+      "samples": 16,
+      "cpu_one_core_pct": 6.018947438141278,
+      "rss_kib": 190206.75,
+      "whole_gpu_pct": 29.3125,
+      "power_w": 43.4875
+    }
+  ],
+  "runs": [
+    {
+      "run": "1080p-r1-cpu",
+      "cold_ms": 1092.477674,
+      "first_frame_ms": 1268,
+      "warm_calls": 872,
+      "warm_work_ms": 4.345294436926605,
+      "texture_bytes_per_update": 8294400.0,
+      "geometry_bytes_per_update": 0.0
+    },
+    {
+      "run": "1080p-r2-cpu",
+      "cold_ms": 1107.19663,
+      "first_frame_ms": 1276,
+      "warm_calls": 873,
+      "warm_work_ms": 4.366617134020618,
+      "texture_bytes_per_update": 8294400.0,
+      "geometry_bytes_per_update": 0.0
+    },
+    {
+      "run": "1080p-r1-gpu",
+      "cold_ms": 1102.084095,
+      "first_frame_ms": 1221,
+      "warm_calls": 874,
+      "warm_work_ms": 0.08584871739130435,
+      "texture_bytes_per_update": 0.0,
+      "geometry_bytes_per_update": 208512.0
+    },
+    {
+      "run": "1080p-r2-gpu",
+      "cold_ms": 1083.323722,
+      "first_frame_ms": 1237,
+      "warm_calls": 874,
+      "warm_work_ms": 0.08580410869565216,
+      "texture_bytes_per_update": 0.0,
+      "geometry_bytes_per_update": 208512.0
+    },
+    {
+      "run": "4k-buffer-r1-cpu",
+      "cold_ms": 1095.18028,
+      "first_frame_ms": 1274,
+      "warm_calls": 397,
+      "warm_work_ms": 24.78367069521411,
+      "texture_bytes_per_update": 33177600.0,
+      "geometry_bytes_per_update": 0.0
+    },
+    {
+      "run": "4k-buffer-r2-cpu",
+      "cold_ms": 1101.173269,
+      "first_frame_ms": 1286,
+      "warm_calls": 420,
+      "warm_work_ms": 24.25925415238095,
+      "texture_bytes_per_update": 33177600.0,
+      "geometry_bytes_per_update": 0.0
+    },
+    {
+      "run": "4k-buffer-r1-gpu",
+      "cold_ms": 1147.302047,
+      "first_frame_ms": 1294,
+      "warm_calls": 873,
+      "warm_work_ms": 0.4018081111111111,
+      "texture_bytes_per_update": 0.0,
+      "geometry_bytes_per_update": 1184928.0
+    },
+    {
+      "run": "4k-buffer-r2-gpu",
+      "cold_ms": 1104.299021,
+      "first_frame_ms": 1268,
+      "warm_calls": 871,
+      "warm_work_ms": 0.39725642135476463,
+      "texture_bytes_per_update": 0.0,
+      "geometry_bytes_per_update": 1184928.0
+    }
+  ],
+  "pixels": [
+    {
+      "label": "accepted vs CPU",
+      "size": [
+        1280,
+        900
+      ],
+      "different_pixels": 0,
+      "percent": 0.0,
+      "max_channel_delta": 0,
+      "mean_rgb_absolute_delta": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "label": "refined",
+      "size": [
+        1280,
+        900
+      ],
+      "different_pixels": 0,
+      "percent": 0.0,
+      "max_channel_delta": 0,
+      "mean_rgb_absolute_delta": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "label": "off",
+      "size": [
+        1280,
+        900
+      ],
+      "different_pixels": 0,
+      "percent": 0.0,
+      "max_channel_delta": 0,
+      "mean_rgb_absolute_delta": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "label": "resize",
+      "size": [
+        1280,
+        900
+      ],
+      "different_pixels": 0,
+      "percent": 0.0,
+      "max_channel_delta": 0,
+      "mean_rgb_absolute_delta": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "label": "dpr1_5",
+      "size": [
+        1920,
+        1350
+      ],
+      "different_pixels": 458583,
+      "percent": 17.69224537037037,
+      "max_channel_delta": 179,
+      "mean_rgb_absolute_delta": [
+        2.329340663580247,
+        1.813894675925926,
+        1.0996844135802468
+      ]
+    },
+    {
+      "label": "1080p-r1",
+      "size": [
+        1920,
+        1080
+      ],
+      "different_pixels": 0,
+      "percent": 0.0,
+      "max_channel_delta": 0,
+      "mean_rgb_absolute_delta": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "label": "1080p-r2",
+      "size": [
+        1920,
+        1080
+      ],
+      "different_pixels": 0,
+      "percent": 0.0,
+      "max_channel_delta": 0,
+      "mean_rgb_absolute_delta": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "label": "4k-buffer-r1",
+      "size": [
+        3840,
+        2160
+      ],
+      "different_pixels": 4534,
+      "percent": 0.054663387345679014,
+      "max_channel_delta": 1,
+      "mean_rgb_absolute_delta": [
+        0.0005398823302469136,
+        0.00020676601080246913,
+        7.113233024691358e-05
+      ]
+    },
+    {
+      "label": "4k-buffer-r2",
+      "size": [
+        3840,
+        2160
+      ],
+      "different_pixels": 4534,
+      "percent": 0.054663387345679014,
+      "max_channel_delta": 1,
+      "mean_rgb_absolute_delta": [
+        0.0005398823302469136,
+        0.00020676601080246913,
+        7.113233024691358e-05
+      ]
+    },
+    {
+      "label": "threaded",
+      "size": [
+        1280,
+        900
+      ],
+      "different_pixels": 0,
+      "percent": 0.0,
+      "max_channel_delta": 0,
+      "mean_rgb_absolute_delta": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "label": "UBSan 4k",
+      "size": [
+        3840,
+        2160
+      ],
+      "different_pixels": 4534,
+      "percent": 0.054663387345679014,
+      "max_channel_delta": 1,
+      "mean_rgb_absolute_delta": [
+        0.0005398823302469136,
+        0.00020676601080246913,
+        7.113233024691358e-05
+      ]
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+Test project /tmp/phosphor-003/gcc-build
+    Start 1: glyph-atlas
+1/1 Test #1: glyph-atlas ......................Subprocess aborted***Exception:   1.55 sec
+PASS atlas texels/guards/repertoire false 1
+PASS atlas texels/guards/repertoire false 1.5
+PASS atlas texels/guards/repertoire false 2
+material has rectangular halo (known GCC failure)
+
+
+0% tests passed, 1 tests failed out of 1
+
+Total Test time (real) =   1.55 sec
+
+The following tests FAILED:
+	  1 - glyph-atlas (Subprocess aborted)
+Errors while running CTest

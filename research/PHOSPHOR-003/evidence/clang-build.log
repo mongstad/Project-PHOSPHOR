@@ -1,0 +1,76 @@
+-- The CXX compiler identification is Clang 20.0.0
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/lib64/rocm/llvm/bin/clang++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+-- Found Threads: TRUE
+-- Performing Test HAVE_STDATOMIC
+-- Performing Test HAVE_STDATOMIC - Success
+-- Found WrapAtomic: TRUE
+-- Found OpenGL: /tmp/phosphor-001-native/sysroot/usr/lib64/libOpenGL.so
+-- Found WrapOpenGL: TRUE
+-- Found WrapVulkanHeaders: /tmp/phosphor-001-native/sysroot/usr/include
+-- Configuring done (0.7s)
+-- Generating done (0.0s)
+-- Build files have been written to: /tmp/phosphor-003/clang-build
+[1/9] Building CXX object CMakeFiles/glyph-data.dir/fixture.cpp.o
+clang++: warning: argument unused during compilation: '-L/tmp/phosphor-002/sysroot/usr/lib64' [-Wunused-command-line-argument]
+[2/9] Building CXX object CMakeFiles/glyph-data.dir/atlas.cpp.o
+FAILED: [code=1] CMakeFiles/glyph-data.dir/atlas.cpp.o 
+/usr/lib64/rocm/llvm/bin/clang++ -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NO_DEBUG -I/home/Nozba/Codex/Project-PHOSPHOR/Project-PHOSPHOR/prototypes/qt-gpu-atlas/. -I/home/Nozba/Codex/Project-PHOSPHOR/Project-PHOSPHOR/prototypes/qt-gpu-atlas/../qt-molten-amber -isystem /tmp/phosphor-002/sysroot/usr/include/qt6/QtGui -isystem /tmp/phosphor-002/sysroot/usr/include/qt6 -isystem /tmp/phosphor-002/sysroot/usr/include/qt6/QtCore -isystem /tmp/phosphor-002/sysroot/usr/lib64/qt6/mkspecs/linux-g++ -isystem /tmp/phosphor-001-native/sysroot/usr/include -L/tmp/phosphor-002/sysroot/usr/lib64 -isystem /tmp/phosphor-002/sysroot/usr/include/c++/16 -isystem /tmp/phosphor-002/sysroot/usr/include/c++/16/x86_64-redhat-linux -isystem /tmp/phosphor-002/sysroot/usr/include/c++/16/backward -O3 -DNDEBUG -std=gnu++20 -MD -MT CMakeFiles/glyph-data.dir/atlas.cpp.o -MF CMakeFiles/glyph-data.dir/atlas.cpp.o.d -o CMakeFiles/glyph-data.dir/atlas.cpp.o -c /home/Nozba/Codex/Project-PHOSPHOR/Project-PHOSPHOR/prototypes/qt-gpu-atlas/atlas.cpp
+clang++: warning: argument unused during compilation: '-L/tmp/phosphor-002/sysroot/usr/lib64' [-Wunused-command-line-argument]
+In file included from /home/Nozba/Codex/Project-PHOSPHOR/Project-PHOSPHOR/prototypes/qt-gpu-atlas/atlas.cpp:1:
+/home/Nozba/Codex/Project-PHOSPHOR/Project-PHOSPHOR/prototypes/qt-gpu-atlas/atlas.h:6:3: warning: declaration does not declare anything [-Wmissing-declarations]
+    6 |   QMap<ushort, QRect> slots;
+      |   ^~~~~~~~~~~~~~~~~~~
+/home/Nozba/Codex/Project-PHOSPHOR/Project-PHOSPHOR/prototypes/qt-gpu-atlas/atlas.cpp:20:10: error: expected expression
+   20 |     slots.insert(chars[i].unicode(), rect);
+      |          ^
+1 warning and 1 error generated.
+[3/9] Building CXX object CMakeFiles/glyph-data.dir/home/Nozba/Codex/Project-PHOSPHOR/Project-PHOSPHOR/prototypes/qt-molten-amber/renderer.cpp.o
+clang++: warning: argument unused during compilation: '-L/tmp/phosphor-002/sysroot/usr/lib64' [-Wunused-command-line-argument]
+[4/9] Building CXX object CMakeFiles/phosphor-003.dir/main.cpp.o
+clang++: warning: argument unused during compilation: '-L/tmp/phosphor-002/sysroot/usr/lib64' [-Wunused-command-line-argument]
+In file included from /home/Nozba/Codex/Project-PHOSPHOR/Project-PHOSPHOR/prototypes/qt-gpu-atlas/main.cpp:1:
+In file included from /home/Nozba/Codex/Project-PHOSPHOR/Project-PHOSPHOR/prototypes/qt-gpu-atlas/view.h:2:
+/home/Nozba/Codex/Project-PHOSPHOR/Project-PHOSPHOR/prototypes/qt-gpu-atlas/atlas.h:6:3: warning: declaration does not declare anything [-Wmissing-declarations]
+    6 |   QMap<ushort, QRect> slots;
+      |   ^~~~~~~~~~~~~~~~~~~
+1 warning generated.
+[5/9] Building CXX object CMakeFiles/phosphor-003.dir/view.cpp.o
+FAILED: [code=1] CMakeFiles/phosphor-003.dir/view.cpp.o 
+/usr/lib64/rocm/llvm/bin/clang++ -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_NO_DEBUG -DQT_OPENGL_LIB -DQT_QMLINTEGRATION_LIB -DQT_QML_LIB -DQT_QUICK_LIB -I/home/Nozba/Codex/Project-PHOSPHOR/Project-PHOSPHOR/prototypes/qt-gpu-atlas/. -I/home/Nozba/Codex/Project-PHOSPHOR/Project-PHOSPHOR/prototypes/qt-gpu-atlas/../qt-molten-amber -isystem /tmp/phosphor-002/sysroot/usr/include/qt6/QtGui -isystem /tmp/phosphor-002/sysroot/usr/include/qt6 -isystem /tmp/phosphor-002/sysroot/usr/include/qt6/QtCore -isystem /tmp/phosphor-002/sysroot/usr/lib64/qt6/mkspecs/linux-g++ -isystem /tmp/phosphor-001-native/sysroot/usr/include -isystem /tmp/phosphor-002/sysroot/usr/include/qt6/QtQuick -isystem /tmp/phosphor-002/sysroot/usr/include/qt6/QtQml -isystem /tmp/phosphor-002/sysroot/usr/include/qt6/QtQmlIntegration -isystem /tmp/phosphor-002/sysroot/usr/include/qt6/QtNetwork -isystem /tmp/phosphor-002/sysroot/usr/include/qt6/QtOpenGL -L/tmp/phosphor-002/sysroot/usr/lib64 -isystem /tmp/phosphor-002/sysroot/usr/include/c++/16 -isystem /tmp/phosphor-002/sysroot/usr/include/c++/16/x86_64-redhat-linux -isystem /tmp/phosphor-002/sysroot/usr/include/c++/16/backward -O3 -DNDEBUG -std=gnu++20 -Wall -Wextra -Wpedantic -MD -MT CMakeFiles/phosphor-003.dir/view.cpp.o -MF CMakeFiles/phosphor-003.dir/view.cpp.o.d -o CMakeFiles/phosphor-003.dir/view.cpp.o -c /home/Nozba/Codex/Project-PHOSPHOR/Project-PHOSPHOR/prototypes/qt-gpu-atlas/view.cpp
+clang++: warning: argument unused during compilation: '-L/tmp/phosphor-002/sysroot/usr/lib64' [-Wunused-command-line-argument]
+In file included from /home/Nozba/Codex/Project-PHOSPHOR/Project-PHOSPHOR/prototypes/qt-gpu-atlas/view.cpp:1:
+In file included from /home/Nozba/Codex/Project-PHOSPHOR/Project-PHOSPHOR/prototypes/qt-gpu-atlas/view.h:2:
+/home/Nozba/Codex/Project-PHOSPHOR/Project-PHOSPHOR/prototypes/qt-gpu-atlas/atlas.h:6:3: warning: declaration does not declare anything [-Wmissing-declarations]
+    6 |   QMap<ushort, QRect> slots;
+      |   ^~~~~~~~~~~~~~~~~~~
+/home/Nozba/Codex/Project-PHOSPHOR/Project-PHOSPHOR/prototypes/qt-gpu-atlas/view.cpp:95:42: error: expected unqualified-id
+   95 |       const auto rect = node->atlas.slots.value(ch.unicode());
+      |                                          ^
+1 warning and 1 error generated.
+ninja: build stopped: subcommand failed.
+[1/7] Building CXX object CMakeFiles/glyph-data.dir/atlas.cpp.o
+clang++: warning: argument unused during compilation: '-L/tmp/phosphor-002/sysroot/usr/lib64' [-Wunused-command-line-argument]
+[2/7] Linking CXX static library libglyph-data.a
+[3/7] Building CXX object CMakeFiles/atlas-tests.dir/tests.cpp.o
+clang++: warning: argument unused during compilation: '-L/tmp/phosphor-002/sysroot/usr/lib64' [-Wunused-command-line-argument]
+[4/7] Linking CXX executable atlas-tests
+[5/7] Building CXX object CMakeFiles/phosphor-003.dir/view.cpp.o
+clang++: warning: argument unused during compilation: '-L/tmp/phosphor-002/sysroot/usr/lib64' [-Wunused-command-line-argument]
+[6/7] Building CXX object CMakeFiles/phosphor-003.dir/main.cpp.o
+clang++: warning: argument unused during compilation: '-L/tmp/phosphor-002/sysroot/usr/lib64' [-Wunused-command-line-argument]
+[7/7] Linking CXX executable phosphor-003
+[1/2] Building CXX object CMakeFiles/phosphor-003.dir/view.cpp.o
+clang++: warning: argument unused during compilation: '-L/tmp/phosphor-002/sysroot/usr/lib64' [-Wunused-command-line-argument]
+[2/2] Linking CXX executable phosphor-003
+[1/2] Building CXX object CMakeFiles/phosphor-003.dir/main.cpp.o
+clang++: warning: argument unused during compilation: '-L/tmp/phosphor-002/sysroot/usr/lib64' [-Wunused-command-line-argument]
+[2/2] Linking CXX executable phosphor-003
+[1/2] Building CXX object CMakeFiles/phosphor-003.dir/view.cpp.o
+clang++: warning: argument unused during compilation: '-L/tmp/phosphor-002/sysroot/usr/lib64' [-Wunused-command-line-argument]
+[2/2] Linking CXX executable phosphor-003
