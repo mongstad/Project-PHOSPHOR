@@ -1,0 +1,67 @@
+[
+  {
+    "ms": 300,
+    "text": "PS1='phosphor$ '; clear; seq 1 240"
+  },
+  {
+    "ms": 500,
+    "key": "Return"
+  },
+  {
+    "ms": 1400,
+    "capture": "/home/Nozba/Codex/Project-PHOSPHOR/Project-PHOSPHOR/research/PHOSPHOR-016/styling/evidence/rest.png",
+    "metrics": "/home/Nozba/Codex/Project-PHOSPHOR/Project-PHOSPHOR/research/PHOSPHOR-016/styling/evidence/rest.json"
+  },
+  {
+    "ms": 1800,
+    "mouse": "hover",
+    "thumb": true
+  },
+  {
+    "ms": 2200,
+    "capture": "/home/Nozba/Codex/Project-PHOSPHOR/Project-PHOSPHOR/research/PHOSPHOR-016/styling/evidence/hover.png",
+    "metrics": "/home/Nozba/Codex/Project-PHOSPHOR/Project-PHOSPHOR/research/PHOSPHOR-016/styling/evidence/hover.json"
+  },
+  {
+    "ms": 2600,
+    "mouse": "press",
+    "thumb": true
+  },
+  {
+    "ms": 3000,
+    "capture": "/home/Nozba/Codex/Project-PHOSPHOR/Project-PHOSPHOR/research/PHOSPHOR-016/styling/evidence/pressed.png",
+    "metrics": "/home/Nozba/Codex/Project-PHOSPHOR/Project-PHOSPHOR/research/PHOSPHOR-016/styling/evidence/pressed.json"
+  },
+  {
+    "ms": 3400,
+    "mouse": "move",
+    "x": 1271,
+    "y": 450
+  },
+  {
+    "ms": 3800,
+    "capture": "/home/Nozba/Codex/Project-PHOSPHOR/Project-PHOSPHOR/research/PHOSPHOR-016/styling/evidence/dragging.png",
+    "metrics": "/home/Nozba/Codex/Project-PHOSPHOR/Project-PHOSPHOR/research/PHOSPHOR-016/styling/evidence/dragging.json"
+  },
+  {
+    "ms": 4200,
+    "mouse": "release",
+    "x": 1271,
+    "y": 450
+  },
+  {
+    "ms": 4500,
+    "mouse": "hover",
+    "x": 100,
+    "y": 100
+  },
+  {
+    "ms": 4900,
+    "capture": "/home/Nozba/Codex/Project-PHOSPHOR/Project-PHOSPHOR/research/PHOSPHOR-016/styling/evidence/released.png",
+    "metrics": "/home/Nozba/Codex/Project-PHOSPHOR/Project-PHOSPHOR/research/PHOSPHOR-016/styling/evidence/released.json"
+  },
+  {
+    "ms": 5400,
+    "close": true
+  }
+]

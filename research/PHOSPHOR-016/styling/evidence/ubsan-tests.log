@@ -1,0 +1,30 @@
+UpdateCTestConfiguration  from :/tmp/phosphor-016-ubsan/DartConfiguration.tcl
+Parse Config file:/tmp/phosphor-016-ubsan/DartConfiguration.tcl
+Test project /tmp/phosphor-016-ubsan
+Constructing a list of tests
+Done constructing a list of tests
+Updating test list for fixtures
+Added 0 tests to meet fixture requirements
+Checking test dependency graph...
+Checking test dependency graph end
+test 1
+    Start 1: terminal-core-pty
+
+1: Test command: /tmp/phosphor-016-ubsan/terminal-tests
+1: Working Directory: /tmp/phosphor-016-ubsan
+1: Environment variables: 
+1:  QT_QPA_PLATFORM=offscreen
+1:  QT_FORCE_STDERR_LOGGING=1
+1: Test timeout computed to be: 30
+1: PASS parser fragmentation, erase/movement, color, ignored strings, Unicode boundary, alternate screen, bounded scrollback
+1: PASS keyboard Qt events and application cursor mode
+1: PASS scrollbar geometry, track, drag, wheel, anchoring, resize, eviction, alternate
+1: PASS real interactive Bash, nonblocking output, resize, Ctrl+C, exit status/reaping
+1: PASS EOF with live subprocess cleanup
+1: PASS close kills HUP-resistant shell and background job
+1: ALL TESTS PASSED
+1/1 Test #1: terminal-core-pty ................   Passed    0.59 sec
+
+100% tests passed, 0 tests failed out of 1
+
+Total Test time (real) =   0.59 sec

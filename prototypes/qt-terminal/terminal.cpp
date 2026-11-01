@@ -67,7 +67,6 @@ void Terminal::feed(const QByteArray &bytes) {
 void Terminal::resize(int rows, int columns) {
   rows_ = std::clamp(rows, 1, 256);
   columns_ = std::clamp(columns, 1, 512);
-  offset_ = 0;
   vterm_set_size(vt_, rows_, columns_);
   vterm_screen_flush_damage(screen_);
 }
@@ -79,10 +78,10 @@ void Terminal::text(uint32_t c, VTermModifier m) {
   offset_ = 0;
   vterm_keyboard_unichar(vt_, c, m);
 }
-void Terminal::scroll(int lines) {
-  if (!alternate_)
-    offset_ = std::clamp(offset_ + lines, 0, int(history_.size()));
+void Terminal::setOffset(int lines) {
+  offset_ = alternate_ ? 0 : std::clamp(lines, 0, historySize());
 }
+void Terminal::scroll(int lines) { setOffset(offset_ + lines); }
 VTermPos Terminal::cursor() const {
   VTermPos p{};
   vterm_state_get_cursorpos(vterm_obtain_state(vt_), &p);

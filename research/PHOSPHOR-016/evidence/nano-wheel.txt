@@ -1,0 +1,16 @@
+        /tmp/phosphor-scrollbar-sample.txt                 
+                                                           
+                                                           
+                                                           
+                                                           
+                                                           
+                                                           
+                                                           
+                                                           
+                                                           
+                                                           
+                                                           
+                                                           
+                       [ New File ]                        
+^G Help       ^O Write Out  ^F Where Is   ^K Cut           
+^X Exit       ^R Read File  ^\ Replace    ^U Paste         

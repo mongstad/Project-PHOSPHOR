@@ -29,6 +29,8 @@ public:
   int rows() const { return rows_; }
   int columns() const { return columns_; }
   int historySize() const { return int(history_.size()); }
+  bool alternateScreen() const { return alternate_; }
+  void setOffset(int lines);
   int offset() const { return offset_; }
   VTermPos cursor() const;
   bool cursorVisible() const { return visible_ && offset_ == 0; }

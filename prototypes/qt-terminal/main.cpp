@@ -181,11 +181,11 @@ int main(int argc, char **argv) {
         app.exit(2);
         return;
       }
-      QTimer::singleShot(delay, &app, [&, a] {
+      QTimer::singleShot(delay, Qt::PreciseTimer, &app, [&, a] {
         if (a.contains("text")) {
           QKeyEvent e(QEvent::KeyPress, 0, Qt::NoModifier,
                       a["text"].toString());
-          view.handleKey(&e);
+          QCoreApplication::sendEvent(&window, &e);
         }
         if (a.contains("key")) {
           const QMap<QString, int> keys = {
@@ -207,7 +207,29 @@ int main(int argc, char **argv) {
           if (a["shift"].toBool())
             mod |= Qt::ShiftModifier;
           QKeyEvent e(QEvent::KeyPress, key, mod);
-          view.handleKey(&e);
+          QCoreApplication::sendEvent(&window, &e);
+        }
+        if (a.contains("mouse")) {
+          const QString kind = a["mouse"].toString();
+          const auto type = kind == "press" ? QEvent::MouseButtonPress :
+                            kind == "release" ? QEvent::MouseButtonRelease : QEvent::MouseMove;
+          const QPointF point = a["thumb"].toBool() ? view.scrollThumb().center()
+              : QPointF(a["x"].toDouble(), a["y"].toDouble());
+          QMouseEvent e(type, point, window.mapToGlobal(point.toPoint()),
+                        type == QEvent::MouseMove ? Qt::NoButton : Qt::LeftButton,
+                        type == QEvent::MouseButtonRelease || kind == "hover"
+                            ? Qt::NoButton : Qt::LeftButton,
+                        Qt::NoModifier);
+          e.setTimestamp(elapsed.elapsed());
+          QCoreApplication::sendEvent(&window, &e);
+        }
+        if (a.contains("wheel")) {
+          const QPointF point(100, 100);
+          QWheelEvent e(point, window.mapToGlobal(point.toPoint()), {},
+                        QPoint(0, a["wheel"].toInt()), Qt::NoButton,
+                        Qt::NoModifier, Qt::NoScrollPhase, false);
+          e.setTimestamp(elapsed.elapsed());
+          QCoreApplication::sendEvent(&window, &e);
         }
         if (a.contains("width"))
           window.resize(a["width"].toInt(), a["height"].toInt());

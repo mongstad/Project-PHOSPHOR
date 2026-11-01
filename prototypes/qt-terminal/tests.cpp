@@ -60,8 +60,8 @@ int main(int argc, char **argv) {
     screen.feed("another\r\n");
     check(screen.offset() == 901, "history anchoring");
     screen.resize(5, 20);
-    check(screen.rows() == 5 && screen.columns() == 20 && screen.offset() == 0,
-          "resize state");
+    check(screen.rows() == 5 && screen.columns() == 20 && screen.offset() == 901,
+          "resize preserves history viewport");
     screen.feed("\033[?1049hALT\033[?1049l");
     check(!screen.textDump().contains("ALT"), "alternate screen restoration");
     Terminal unicode(2, 20);
@@ -105,6 +105,66 @@ int main(int argc, char **argv) {
     view.handleKey(&left);
     check(keys == "\033OD", "application cursor mode");
     qInfo() << "PASS keyboard Qt events and application cursor mode";
+  }
+  {
+    struct TestView : TerminalView {
+      using TerminalView::TerminalView;
+      using TerminalView::mousePressEvent;
+      using TerminalView::mouseMoveEvent;
+      using TerminalView::mouseReleaseEvent;
+      using TerminalView::wheelEvent;
+    };
+    Terminal t(10, 40);
+    RenderMetrics metrics;
+    TestView view(nullptr, t, metrics);
+    view.setSize({800, 600});
+    check(view.scrollThumb() == view.scrollTrack(), "empty history full thumb");
+    for (int n = 0; n < 100; ++n)
+      t.feed(QByteArray::number(n) + "\r\n");
+    const auto track = view.scrollTrack();
+    check(qAbs(view.scrollThumb().bottom() - track.bottom()) < .001,
+          "live bottom thumb");
+    auto mouse = [&](QEvent::Type type, QPointF p) {
+      QMouseEvent e(type, p, p, type == QEvent::MouseMove ? Qt::NoButton : Qt::LeftButton,
+                    type == QEvent::MouseButtonRelease ? Qt::NoButton : Qt::LeftButton,
+                    Qt::NoModifier);
+      if (type == QEvent::MouseButtonPress) view.mousePressEvent(&e);
+      else if (type == QEvent::MouseMove) view.mouseMoveEvent(&e);
+      else view.mouseReleaseEvent(&e);
+    };
+    mouse(QEvent::MouseButtonPress, track.topLeft() + QPointF(5, 1));
+    check(t.offset() == 9, "track pages upward");
+    mouse(QEvent::MouseButtonRelease, track.center());
+    mouse(QEvent::MouseButtonPress, view.scrollThumb().center());
+    mouse(QEvent::MouseMove, track.topLeft());
+    check(t.offset() == t.historySize(), "drag reaches oldest row");
+    mouse(QEvent::MouseMove, track.bottomRight());
+    check(t.offset() == 0, "drag returns live");
+    mouse(QEvent::MouseButtonRelease, track.bottomRight());
+    QWheelEvent wheel(track.center(), track.center(), {}, QPoint(0, 120),
+                      Qt::NoButton, Qt::NoModifier, Qt::NoScrollPhase, false);
+    view.wheelEvent(&wheel);
+    check(t.offset() == 3, "wheel scrolls three rows");
+    const QString anchored = t.textDump();
+    t.feed("new line\r\n");
+    check(t.textDump() == anchored, "incoming output retains visible rows");
+    t.resize(12, 45);
+    check(t.offset() == 4, "resize does not snap live");
+    t.setOffset(100000);
+    for (int n = 0; n < 1100; ++n) t.feed("eviction\r\n");
+    check(t.historySize() == 1000 && t.offset() == 1000,
+          "eviction clamps to oldest retained row");
+    t.feed("\033[?1049h");
+    check(view.scrollThumb() == track && t.offset() == 0,
+          "alternate screen has disabled full thumb");
+    view.wheelEvent(&wheel);
+    check(t.offset() == 0, "alternate screen rejects scrollback");
+    t.feed("\033[?1049l");
+    check(t.historySize() == 1000 && t.offset() == 0, "return from alternate live");
+    t.feed("\033[3J");
+    check(t.historySize() == 0 && view.scrollThumb() == track, "clear history resets thumb");
+    check(t.columns() == 45, "scrollbar does not change columns");
+    qInfo() << "PASS scrollbar geometry, track, drag, wheel, anchoring, resize, eviction, alternate";
   }
   {
     Pty p;

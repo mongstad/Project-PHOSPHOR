@@ -1,0 +1,18 @@
+{
+    "cached_glyphs": 132,
+    "columns": 97,
+    "dpr": 1,
+    "elapsed_ms": 10224,
+    "fallback_cells": 0,
+    "first_frame_ms": 1197,
+    "height": 900,
+    "history_lines": 1000,
+    "parse_ms": 8.227295,
+    "read_bytes": 9951,
+    "render_calls": 197,
+    "render_work_ms": 1127.323172,
+    "rows": 26,
+    "scroll_offset": 1000,
+    "texture_bytes": 1152000,
+    "width": 1280
+}

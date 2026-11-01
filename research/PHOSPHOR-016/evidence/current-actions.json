@@ -1,0 +1,42 @@
+[
+  {
+    "ms": 300,
+    "text": "PS1='phosphor$ '; clear; printf 'PHOSPHOR scrollbar check\\n\\033[31mANSI red \\033[92mgreen\\033[0m\\n'"
+  },
+  {
+    "ms": 500,
+    "key": "Return"
+  },
+  {
+    "ms": 1200,
+    "capture": "/home/Nozba/Codex/Project-PHOSPHOR/Project-PHOSPHOR/research/PHOSPHOR-016/evidence/current-short.png"
+  },
+  {
+    "ms": 1500,
+    "metrics": "/home/Nozba/Codex/Project-PHOSPHOR/Project-PHOSPHOR/research/PHOSPHOR-016/evidence/current-idle-start.json"
+  },
+  {
+    "ms": 3500,
+    "metrics": "/home/Nozba/Codex/Project-PHOSPHOR/Project-PHOSPHOR/research/PHOSPHOR-016/evidence/current-idle-end.json"
+  },
+  {
+    "ms": 4000,
+    "text": "python3 -c 'import time; [(print(i, flush=True), time.sleep(.002)) for i in range(2000)]'"
+  },
+  {
+    "ms": 4200,
+    "key": "Return"
+  },
+  {
+    "ms": 4500,
+    "metrics": "/home/Nozba/Codex/Project-PHOSPHOR/Project-PHOSPHOR/research/PHOSPHOR-016/evidence/current-output-start.json"
+  },
+  {
+    "ms": 7800,
+    "metrics": "/home/Nozba/Codex/Project-PHOSPHOR/Project-PHOSPHOR/research/PHOSPHOR-016/evidence/current-output-end.json"
+  },
+  {
+    "ms": 9000,
+    "close": true
+  }
+]

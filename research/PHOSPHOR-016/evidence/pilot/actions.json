@@ -1,0 +1,174 @@
+[
+  {
+    "ms": 300,
+    "text": "PS1='phosphor$ '; clear; printf 'PHOSPHOR scrollbar check\\n\\033[31mANSI red \\033[92mgreen\\033[0m\\n'"
+  },
+  {
+    "ms": 330,
+    "key": "Return"
+  },
+  {
+    "ms": 1100,
+    "capture": "/home/Nozba/Codex/Project-PHOSPHOR/Project-PHOSPHOR/research/PHOSPHOR-016/evidence/short.png",
+    "dump": "/home/Nozba/Codex/Project-PHOSPHOR/Project-PHOSPHOR/research/PHOSPHOR-016/evidence/short.txt",
+    "metrics": "/home/Nozba/Codex/Project-PHOSPHOR/Project-PHOSPHOR/research/PHOSPHOR-016/evidence/short.json"
+  },
+  {
+    "ms": 1400,
+    "text": "seq 1 240"
+  },
+  {
+    "ms": 1430,
+    "key": "Return"
+  },
+  {
+    "ms": 2200,
+    "capture": "/home/Nozba/Codex/Project-PHOSPHOR/Project-PHOSPHOR/research/PHOSPHOR-016/evidence/bottom.png",
+    "dump": "/home/Nozba/Codex/Project-PHOSPHOR/Project-PHOSPHOR/research/PHOSPHOR-016/evidence/bottom.txt",
+    "metrics": "/home/Nozba/Codex/Project-PHOSPHOR/Project-PHOSPHOR/research/PHOSPHOR-016/evidence/bottom.json"
+  },
+  {
+    "ms": 2500,
+    "mouse": "press",
+    "x": 1271,
+    "y": 835
+  },
+  {
+    "ms": 2600,
+    "mouse": "move",
+    "x": 1271,
+    "y": 440
+  },
+  {
+    "ms": 2700,
+    "mouse": "release",
+    "x": 1271,
+    "y": 440
+  },
+  {
+    "ms": 3000,
+    "capture": "/home/Nozba/Codex/Project-PHOSPHOR/Project-PHOSPHOR/research/PHOSPHOR-016/evidence/drag-middle.png",
+    "dump": "/home/Nozba/Codex/Project-PHOSPHOR/Project-PHOSPHOR/research/PHOSPHOR-016/evidence/drag-middle.txt",
+    "metrics": "/home/Nozba/Codex/Project-PHOSPHOR/Project-PHOSPHOR/research/PHOSPHOR-016/evidence/drag-middle.json"
+  },
+  {
+    "ms": 3300,
+    "mouse": "press",
+    "x": 1271,
+    "y": 100
+  },
+  {
+    "ms": 3400,
+    "mouse": "release",
+    "x": 1271,
+    "y": 100
+  },
+  {
+    "ms": 3700,
+    "capture": "/home/Nozba/Codex/Project-PHOSPHOR/Project-PHOSPHOR/research/PHOSPHOR-016/evidence/track.png",
+    "dump": "/home/Nozba/Codex/Project-PHOSPHOR/Project-PHOSPHOR/research/PHOSPHOR-016/evidence/track.txt",
+    "metrics": "/home/Nozba/Codex/Project-PHOSPHOR/Project-PHOSPHOR/research/PHOSPHOR-016/evidence/track.json"
+  },
+  {
+    "ms": 3900,
+    "wheel": 120
+  },
+  {
+    "ms": 4200,
+    "capture": "/home/Nozba/Codex/Project-PHOSPHOR/Project-PHOSPHOR/research/PHOSPHOR-016/evidence/wheel.png",
+    "dump": "/home/Nozba/Codex/Project-PHOSPHOR/Project-PHOSPHOR/research/PHOSPHOR-016/evidence/wheel.txt",
+    "metrics": "/home/Nozba/Codex/Project-PHOSPHOR/Project-PHOSPHOR/research/PHOSPHOR-016/evidence/wheel.json"
+  },
+  {
+    "ms": 4400,
+    "key": "PageUp",
+    "shift": true
+  },
+  {
+    "ms": 4700,
+    "capture": "/home/Nozba/Codex/Project-PHOSPHOR/Project-PHOSPHOR/research/PHOSPHOR-016/evidence/keyboard.png",
+    "dump": "/home/Nozba/Codex/Project-PHOSPHOR/Project-PHOSPHOR/research/PHOSPHOR-016/evidence/keyboard.txt",
+    "metrics": "/home/Nozba/Codex/Project-PHOSPHOR/Project-PHOSPHOR/research/PHOSPHOR-016/evidence/keyboard.json"
+  },
+  {
+    "ms": 5000,
+    "text": "python3 -c 'import time; [(print(i, flush=True), time.sleep(.002)) for i in range(1600)]'"
+  },
+  {
+    "ms": 5030,
+    "key": "Return"
+  },
+  {
+    "ms": 5500,
+    "key": "PageUp",
+    "shift": true
+  },
+  {
+    "ms": 5900,
+    "capture": "/home/Nozba/Codex/Project-PHOSPHOR/Project-PHOSPHOR/research/PHOSPHOR-016/evidence/incoming-before.png",
+    "dump": "/home/Nozba/Codex/Project-PHOSPHOR/Project-PHOSPHOR/research/PHOSPHOR-016/evidence/incoming-before.txt",
+    "metrics": "/home/Nozba/Codex/Project-PHOSPHOR/Project-PHOSPHOR/research/PHOSPHOR-016/evidence/incoming-before.json"
+  },
+  {
+    "ms": 7600,
+    "capture": "/home/Nozba/Codex/Project-PHOSPHOR/Project-PHOSPHOR/research/PHOSPHOR-016/evidence/incoming-after.png",
+    "dump": "/home/Nozba/Codex/Project-PHOSPHOR/Project-PHOSPHOR/research/PHOSPHOR-016/evidence/incoming-after.txt",
+    "metrics": "/home/Nozba/Codex/Project-PHOSPHOR/Project-PHOSPHOR/research/PHOSPHOR-016/evidence/incoming-after.json"
+  },
+  {
+    "ms": 9000,
+    "capture": "/home/Nozba/Codex/Project-PHOSPHOR/Project-PHOSPHOR/research/PHOSPHOR-016/evidence/evicted.png",
+    "dump": "/home/Nozba/Codex/Project-PHOSPHOR/Project-PHOSPHOR/research/PHOSPHOR-016/evidence/evicted.txt",
+    "metrics": "/home/Nozba/Codex/Project-PHOSPHOR/Project-PHOSPHOR/research/PHOSPHOR-016/evidence/evicted.json"
+  },
+  {
+    "ms": 9300,
+    "width": 800,
+    "height": 600
+  },
+  {
+    "ms": 9800,
+    "capture": "/home/Nozba/Codex/Project-PHOSPHOR/Project-PHOSPHOR/research/PHOSPHOR-016/evidence/resize.png",
+    "dump": "/home/Nozba/Codex/Project-PHOSPHOR/Project-PHOSPHOR/research/PHOSPHOR-016/evidence/resize.txt",
+    "metrics": "/home/Nozba/Codex/Project-PHOSPHOR/Project-PHOSPHOR/research/PHOSPHOR-016/evidence/resize.json"
+  },
+  {
+    "ms": 10200,
+    "text": "nano --ignorercfiles /tmp/phosphor-scrollbar-sample.txt"
+  },
+  {
+    "ms": 10230,
+    "key": "Return"
+  },
+  {
+    "ms": 11200,
+    "capture": "/home/Nozba/Codex/Project-PHOSPHOR/Project-PHOSPHOR/research/PHOSPHOR-016/evidence/nano.png",
+    "dump": "/home/Nozba/Codex/Project-PHOSPHOR/Project-PHOSPHOR/research/PHOSPHOR-016/evidence/nano.txt",
+    "metrics": "/home/Nozba/Codex/Project-PHOSPHOR/Project-PHOSPHOR/research/PHOSPHOR-016/evidence/nano.json"
+  },
+  {
+    "ms": 11500,
+    "wheel": 120
+  },
+  {
+    "ms": 11800,
+    "capture": "/home/Nozba/Codex/Project-PHOSPHOR/Project-PHOSPHOR/research/PHOSPHOR-016/evidence/nano-wheel.png",
+    "dump": "/home/Nozba/Codex/Project-PHOSPHOR/Project-PHOSPHOR/research/PHOSPHOR-016/evidence/nano-wheel.txt",
+    "metrics": "/home/Nozba/Codex/Project-PHOSPHOR/Project-PHOSPHOR/research/PHOSPHOR-016/evidence/nano-wheel.json"
+  },
+  {
+    "ms": 12100,
+    "key": "X",
+    "ctrl": true
+  },
+  {
+    "ms": 12600,
+    "capture": "/home/Nozba/Codex/Project-PHOSPHOR/Project-PHOSPHOR/research/PHOSPHOR-016/evidence/restored.png",
+    "dump": "/home/Nozba/Codex/Project-PHOSPHOR/Project-PHOSPHOR/research/PHOSPHOR-016/evidence/restored.txt",
+    "metrics": "/home/Nozba/Codex/Project-PHOSPHOR/Project-PHOSPHOR/research/PHOSPHOR-016/evidence/restored.json"
+  },
+  {
+    "ms": 13000,
+    "close": true
+  }
+]
