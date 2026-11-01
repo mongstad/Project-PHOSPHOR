@@ -1,0 +1,43 @@
+[
+  {
+    "ms": 500,
+    "text": "nano --ignorercfiles /tmp/phosphor-004/nano-sample.txt"
+  },
+  {
+    "ms": 530,
+    "key": "Return"
+  },
+  {
+    "ms": 1800,
+    "capture": "/home/Nozba/Codex/Project-PHOSPHOR/Project-PHOSPHOR/research/PHOSPHOR-004/evidence/nano-client.png",
+    "dump": "/home/Nozba/Codex/Project-PHOSPHOR/Project-PHOSPHOR/research/PHOSPHOR-004/evidence/nano-screen.txt",
+    "metrics": "/home/Nozba/Codex/Project-PHOSPHOR/Project-PHOSPHOR/research/PHOSPHOR-004/evidence/nano-snapshot.json"
+  },
+  {
+    "ms": 2600,
+    "key": "X",
+    "ctrl": true
+  },
+  {
+    "ms": 3300,
+    "text": "fastfetch --logo none"
+  },
+  {
+    "ms": 3330,
+    "key": "Return"
+  },
+  {
+    "ms": 5000,
+    "capture": "/home/Nozba/Codex/Project-PHOSPHOR/Project-PHOSPHOR/research/PHOSPHOR-004/evidence/fastfetch-client.png",
+    "dump": "/home/Nozba/Codex/Project-PHOSPHOR/Project-PHOSPHOR/research/PHOSPHOR-004/evidence/fastfetch-screen.txt",
+    "metrics": "/home/Nozba/Codex/Project-PHOSPHOR/Project-PHOSPHOR/research/PHOSPHOR-004/evidence/fastfetch-snapshot.json"
+  },
+  {
+    "ms": 6000,
+    "text": "exit"
+  },
+  {
+    "ms": 6030,
+    "key": "Return"
+  }
+]

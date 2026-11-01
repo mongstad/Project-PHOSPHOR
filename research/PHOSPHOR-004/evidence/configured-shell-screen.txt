@@ -1,0 +1,26 @@
+phosphor$ pwd; echo CONFIGURED_SHELL_OK                                                          
+/home/Nozba/Codex/Project-PHOSPHOR/Project-PHOSPHOR                                              
+CONFIGURED_SHELL_OK                                                                              
+phosphor$                                                                                        
+                                                                                                 
+                                                                                                 
+                                                                                                 
+                                                                                                 
+                                                                                                 
+                                                                                                 
+                                                                                                 
+                                                                                                 
+                                                                                                 
+                                                                                                 
+                                                                                                 
+                                                                                                 
+                                                                                                 
+                                                                                                 
+                                                                                                 
+                                                                                                 
+                                                                                                 
+                                                                                                 
+                                                                                                 
+                                                                                                 
+                                                                                                 
+                                                                                                 

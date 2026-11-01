@@ -1,0 +1,134 @@
+[
+  {
+    "ms": 500,
+    "text": "PS1='phosphor$ '; clear; pwd; ls -d prototypes research; echo REAL_SHELL; printf 'ANSI: \\033[31mred \\033[92mgreen \\033[38;2;80;160;255mtruecolor \\033[44;97mbackground\\033[0m\\n'; printf 'Unicode: \u03b1 \u03b2 \u250c\u2500\u2510 \u00e9 \u00f8 \u00e5\\n'; uname -a; ls /nonexistent-phosphor-test"
+  },
+  {
+    "ms": 530,
+    "key": "Return"
+  },
+  {
+    "ms": 1800,
+    "capture": "/home/Nozba/Codex/Project-PHOSPHOR/Project-PHOSPHOR/research/PHOSPHOR-004/evidence/commands-client.png",
+    "dump": "/home/Nozba/Codex/Project-PHOSPHOR/Project-PHOSPHOR/research/PHOSPHOR-004/evidence/commands-screen.txt",
+    "metrics": "/home/Nozba/Codex/Project-PHOSPHOR/Project-PHOSPHOR/research/PHOSPHOR-004/evidence/commands-snapshot.json"
+  },
+  {
+    "ms": 2600,
+    "text": "sleep 30"
+  },
+  {
+    "ms": 2630,
+    "key": "Return"
+  },
+  {
+    "ms": 3300,
+    "key": "C",
+    "ctrl": true
+  },
+  {
+    "ms": 3800,
+    "text": "echo INTERRUPT_OK"
+  },
+  {
+    "ms": 3830,
+    "key": "Return"
+  },
+  {
+    "ms": 4300,
+    "text": "echo helo"
+  },
+  {
+    "ms": 4400,
+    "key": "Left"
+  },
+  {
+    "ms": 4500,
+    "text": "l"
+  },
+  {
+    "ms": 4600,
+    "key": "Return"
+  },
+  {
+    "ms": 5100,
+    "capture": "/home/Nozba/Codex/Project-PHOSPHOR/Project-PHOSPHOR/research/PHOSPHOR-004/evidence/editing-client.png",
+    "dump": "/home/Nozba/Codex/Project-PHOSPHOR/Project-PHOSPHOR/research/PHOSPHOR-004/evidence/editing-screen.txt",
+    "metrics": "/home/Nozba/Codex/Project-PHOSPHOR/Project-PHOSPHOR/research/PHOSPHOR-004/evidence/editing-snapshot.json"
+  },
+  {
+    "ms": 5800,
+    "text": "seq 1 1200"
+  },
+  {
+    "ms": 5830,
+    "key": "Return"
+  },
+  {
+    "ms": 6500,
+    "key": "PageUp",
+    "shift": true
+  },
+  {
+    "ms": 7000,
+    "capture": "/home/Nozba/Codex/Project-PHOSPHOR/Project-PHOSPHOR/research/PHOSPHOR-004/evidence/scrollback-client.png",
+    "dump": "/home/Nozba/Codex/Project-PHOSPHOR/Project-PHOSPHOR/research/PHOSPHOR-004/evidence/scrollback-screen.txt",
+    "metrics": "/home/Nozba/Codex/Project-PHOSPHOR/Project-PHOSPHOR/research/PHOSPHOR-004/evidence/scrollback-snapshot.json"
+  },
+  {
+    "ms": 7700,
+    "key": "PageDown",
+    "shift": true
+  },
+  {
+    "ms": 8100,
+    "width": 800,
+    "height": 600
+  },
+  {
+    "ms": 8500,
+    "text": "stty size"
+  },
+  {
+    "ms": 8530,
+    "key": "Return"
+  },
+  {
+    "ms": 9200,
+    "capture": "/home/Nozba/Codex/Project-PHOSPHOR/Project-PHOSPHOR/research/PHOSPHOR-004/evidence/resize-client.png",
+    "dump": "/home/Nozba/Codex/Project-PHOSPHOR/Project-PHOSPHOR/research/PHOSPHOR-004/evidence/resize-screen.txt",
+    "metrics": "/home/Nozba/Codex/Project-PHOSPHOR/Project-PHOSPHOR/research/PHOSPHOR-004/evidence/resize-snapshot.json"
+  },
+  {
+    "ms": 9900,
+    "width": 1280,
+    "height": 900
+  },
+  {
+    "ms": 10300,
+    "key": "L",
+    "ctrl": true
+  },
+  {
+    "ms": 10600,
+    "text": "echo RESIZE_AND_CLEAR_OK; printf '\\033[3;5HPOSITIONED\\n'"
+  },
+  {
+    "ms": 10630,
+    "key": "Return"
+  },
+  {
+    "ms": 11500,
+    "capture": "/home/Nozba/Codex/Project-PHOSPHOR/Project-PHOSPHOR/research/PHOSPHOR-004/evidence/positioned-client.png",
+    "dump": "/home/Nozba/Codex/Project-PHOSPHOR/Project-PHOSPHOR/research/PHOSPHOR-004/evidence/positioned-screen.txt",
+    "metrics": "/home/Nozba/Codex/Project-PHOSPHOR/Project-PHOSPHOR/research/PHOSPHOR-004/evidence/positioned-snapshot.json"
+  },
+  {
+    "ms": 12400,
+    "text": "exit"
+  },
+  {
+    "ms": 12430,
+    "key": "Return"
+  }
+]

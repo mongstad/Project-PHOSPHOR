@@ -1,0 +1,33 @@
+glyph.vert -> glyph.vert.qsb exposed as :/shaders/glyph.vert.qsb
+glyph.frag -> glyph.frag.qsb exposed as :/shaders/glyph.frag.qsb
+-- Configuring done (0.2s)
+-- Generating done (0.0s)
+-- Build files have been written to: /tmp/phosphor-004/clang-build
+[0/2] Re-checking globbed directories...
+[1/10] Building CXX object CMakeFiles/terminal-core.dir/terminal.cpp.o
+clang++: warning: argument unused during compilation: '-L/tmp/phosphor-002/sysroot/usr/lib64' [-Wunused-command-line-argument]
+[2/10] Building CXX object CMakeFiles/terminal-core.dir/pty.cpp.o
+clang++: warning: argument unused during compilation: '-L/tmp/phosphor-002/sysroot/usr/lib64' [-Wunused-command-line-argument]
+[3/10] Linking CXX static library libterminal-core.a
+[4/10] Building CXX object CMakeFiles/terminal-tests.dir/tests.cpp.o
+clang++: warning: argument unused during compilation: '-L/tmp/phosphor-002/sysroot/usr/lib64' [-Wunused-command-line-argument]
+[5/10] Building CXX object CMakeFiles/terminal-view.dir/view.cpp.o
+clang++: warning: argument unused during compilation: '-L/tmp/phosphor-002/sysroot/usr/lib64' [-Wunused-command-line-argument]
+[6/10] Linking CXX static library libterminal-view.a
+[7/10] Linking CXX executable terminal-tests
+[8/10] Building CXX object CMakeFiles/phosphor-terminal.dir/main.cpp.o
+clang++: warning: argument unused during compilation: '-L/tmp/phosphor-002/sysroot/usr/lib64' [-Wunused-command-line-argument]
+[9/10] Linking CXX executable phosphor-terminal
+Test project /tmp/phosphor-004/clang-build
+    Start 1: terminal-core-pty
+1/1 Test #1: terminal-core-pty ................Subprocess aborted***Exception:   0.12 sec
+FAIL: wide continuation background
+
+
+0% tests passed, 1 tests failed out of 1
+
+Total Test time (real) =   0.13 sec
+
+The following tests FAILED:
+	  1 - terminal-core-pty (Subprocess aborted)
+Errors while running CTest

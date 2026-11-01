@@ -1,0 +1,26 @@
+/home/Nozba/Codex/Project-PHOSPHOR/Project-PHOSPHOR                                              
+prototypes  research                                                                             
+REAL_SHELL                                                                                       
+ANSI: red green truecolor background                                                             
+Unicode: α β ┌─┐ é ø å                                                                           
+Linux Johnny-Desktop 7.2.13-200.fc44.x86_64 #1 SMP PREEMPT_DYNAMIC Mon Oct 26 18:54:52 UTC 2026 x
+86_64 GNU/Linux                                                                                  
+ls: cannot access '/nonexistent-phosphor-test': No such file or directory                        
+phosphor$ sleep 30                                                                               
+^C                                                                                               
+phosphor$ echo INTERRUPT_OK                                                                      
+INTERRUPT_OK                                                                                     
+phosphor$ echo hello                                                                             
+hello                                                                                            
+phosphor$                                                                                        
+                                                                                                 
+                                                                                                 
+                                                                                                 
+                                                                                                 
+                                                                                                 
+                                                                                                 
+                                                                                                 
+                                                                                                 
+                                                                                                 
+                                                                                                 
+                                                                                                 

@@ -1,0 +1,29 @@
+[
+  {
+    "ms": 500,
+    "text": "clear; printf '\\033[44m\u4e2d\\033[0m UBSan\\n'; seq 1 1000"
+  },
+  {
+    "ms": 530,
+    "key": "Return"
+  },
+  {
+    "ms": 1500,
+    "width": 800,
+    "height": 600
+  },
+  {
+    "ms": 2200,
+    "capture": "/home/Nozba/Codex/Project-PHOSPHOR/Project-PHOSPHOR/research/PHOSPHOR-004/evidence/final-ubsan-client.png",
+    "dump": "/home/Nozba/Codex/Project-PHOSPHOR/Project-PHOSPHOR/research/PHOSPHOR-004/evidence/final-ubsan-screen.txt",
+    "metrics": "/home/Nozba/Codex/Project-PHOSPHOR/Project-PHOSPHOR/research/PHOSPHOR-004/evidence/final-ubsan-snapshot.json"
+  },
+  {
+    "ms": 2900,
+    "text": "exit"
+  },
+  {
+    "ms": 2930,
+    "key": "Return"
+  }
+]

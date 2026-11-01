@@ -1,0 +1,26 @@
+phosphor$ echo RESIZE_AND_CLEAR_OK; printf '\033[3;5HPOSITIONED\n'                               
+RESIZE_AND_CLEAR_OK                                                                              
+    POSITIONED                                                                                   
+phosphor$                                                                                        
+                                                                                                 
+                                                                                                 
+                                                                                                 
+                                                                                                 
+                                                                                                 
+                                                                                                 
+                                                                                                 
+                                                                                                 
+                                                                                                 
+                                                                                                 
+                                                                                                 
+                                                                                                 
+                                                                                                 
+                                                                                                 
+                                                                                                 
+                                                                                                 
+                                                                                                 
+                                                                                                 
+                                                                                                 
+                                                                                                 
+                                                                                                 
+                                                                                                 

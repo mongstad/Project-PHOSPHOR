@@ -1,0 +1,24 @@
+glyph.vert -> glyph.vert.qsb exposed as :/shaders/glyph.vert.qsb
+glyph.frag -> glyph.frag.qsb exposed as :/shaders/glyph.frag.qsb
+-- Configuring done (0.2s)
+-- Generating done (0.0s)
+-- Build files have been written to: /tmp/phosphor-004/clang-build
+[0/2] Re-checking globbed directories...
+[1/3] Building CXX object CMakeFiles/terminal-tests.dir/tests.cpp.o
+clang++: warning: argument unused during compilation: '-L/tmp/phosphor-002/sysroot/usr/lib64' [-Wunused-command-line-argument]
+[2/3] Linking CXX executable terminal-tests
+Test project /tmp/phosphor-004/clang-build
+    Start 1: terminal-core-pty
+1/1 Test #1: terminal-core-pty ................Subprocess aborted***Exception:   4.25 sec
+PASS parser fragmentation, erase/movement, color, ignored strings, Unicode boundary, alternate screen, bounded scrollback
+PASS keyboard Qt events and application cursor mode
+FAIL: foreground Ctrl+C
+
+
+0% tests passed, 1 tests failed out of 1
+
+Total Test time (real) =   4.25 sec
+
+The following tests FAILED:
+	  1 - terminal-core-pty (Subprocess aborted)
+Errors while running CTest

@@ -1,0 +1,23 @@
+[
+  {
+    "ms": 500,
+    "text": "PS1='phosphor$ '; clear; pwd; ls -d prototypes research; echo 'REAL PTY SHELL'; printf '\\033[31mred \\033[92mgreen \\033[38;2;80;160;255mtruecolor\\033[0m\\n'; printf 'Unicode: \u03b1 \u03b2 \u250c\u2500\u2510 \u00e9 \u00f8 \u00e5\\n'; uname -a"
+  },
+  {
+    "ms": 550,
+    "key": "Return"
+  },
+  {
+    "ms": 2000,
+    "capture": "/home/Nozba/Codex/Project-PHOSPHOR/Project-PHOSPHOR/research/PHOSPHOR-004/evidence/corrected-client.png",
+    "dump": "/home/Nozba/Codex/Project-PHOSPHOR/Project-PHOSPHOR/research/PHOSPHOR-004/evidence/corrected-screen.txt"
+  },
+  {
+    "ms": 3000,
+    "text": "exit"
+  },
+  {
+    "ms": 3050,
+    "key": "Return"
+  }
+]

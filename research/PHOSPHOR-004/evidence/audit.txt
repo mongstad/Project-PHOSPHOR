@@ -1,0 +1,1 @@
+PASS preservation hashes/history; 44 final samples; matched 1080p metadata; zero warm texture upload; accepted full image exact twice; real command/readline/resize/history/Tab/Backspace/Ctrl+D checks; unchanged displays

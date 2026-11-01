@@ -1,0 +1,78 @@
+-- The C compiler identification is Clang 20.0.0
+-- The CXX compiler identification is Clang 20.0.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/lib64/rocm/llvm/bin/clang - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/lib64/rocm/llvm/bin/clang++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+-- Found Threads: TRUE
+-- Performing Test HAVE_STDATOMIC
+-- Performing Test HAVE_STDATOMIC - Success
+-- Found WrapAtomic: TRUE
+-- Found OpenGL: /tmp/phosphor-001-native/sysroot/usr/lib64/libOpenGL.so
+-- Found WrapOpenGL: TRUE
+-- Found WrapVulkanHeaders: /tmp/phosphor-001-native/sysroot/usr/include
+glyph.vert -> glyph.vert.qsb exposed as :/shaders/glyph.vert.qsb
+glyph.frag -> glyph.frag.qsb exposed as :/shaders/glyph.frag.qsb
+-- Configuring done (0.8s)
+-- Generating done (0.0s)
+-- Build files have been written to: /tmp/phosphor-004/clang-build
+[0/2] Re-checking globbed directories...
+[1/27] Building C object CMakeFiles/vterm.dir/tmp/phosphor-004/libvterm-0.3.3/src/encoding.c.o
+clang: warning: argument unused during compilation: '-L/tmp/phosphor-002/sysroot/usr/lib64' [-Wunused-command-line-argument]
+[2/27] Building C object CMakeFiles/vterm.dir/tmp/phosphor-004/libvterm-0.3.3/src/mouse.c.o
+clang: warning: argument unused during compilation: '-L/tmp/phosphor-002/sysroot/usr/lib64' [-Wunused-command-line-argument]
+[3/27] Building C object CMakeFiles/vterm.dir/tmp/phosphor-004/libvterm-0.3.3/src/keyboard.c.o
+clang: warning: argument unused during compilation: '-L/tmp/phosphor-002/sysroot/usr/lib64' [-Wunused-command-line-argument]
+[4/27] Building C object CMakeFiles/vterm.dir/tmp/phosphor-004/libvterm-0.3.3/src/parser.c.o
+clang: warning: argument unused during compilation: '-L/tmp/phosphor-002/sysroot/usr/lib64' [-Wunused-command-line-argument]
+[5/27] Building C object CMakeFiles/vterm.dir/tmp/phosphor-004/libvterm-0.3.3/src/pen.c.o
+clang: warning: argument unused during compilation: '-L/tmp/phosphor-002/sysroot/usr/lib64' [-Wunused-command-line-argument]
+[6/27] Building C object CMakeFiles/vterm.dir/tmp/phosphor-004/libvterm-0.3.3/src/unicode.c.o
+clang: warning: argument unused during compilation: '-L/tmp/phosphor-002/sysroot/usr/lib64' [-Wunused-command-line-argument]
+[7/27] Building C object CMakeFiles/vterm.dir/tmp/phosphor-004/libvterm-0.3.3/src/vterm.c.o
+clang: warning: argument unused during compilation: '-L/tmp/phosphor-002/sysroot/usr/lib64' [-Wunused-command-line-argument]
+[8/27] Building C object CMakeFiles/vterm.dir/tmp/phosphor-004/libvterm-0.3.3/src/screen.c.o
+clang: warning: argument unused during compilation: '-L/tmp/phosphor-002/sysroot/usr/lib64' [-Wunused-command-line-argument]
+[9/27] Building C object CMakeFiles/vterm.dir/tmp/phosphor-004/libvterm-0.3.3/src/state.c.o
+clang: warning: argument unused during compilation: '-L/tmp/phosphor-002/sysroot/usr/lib64' [-Wunused-command-line-argument]
+[10/27] Linking C static library libvterm.a
+[11/27] Generating .qsb/glyph.frag.qsb
+[12/27] Generating .qsb/glyph.vert.qsb
+[13/27] Building CXX object CMakeFiles/terminal-view_resources_1.dir/.qt/rcc/qrc_glyph_shaders_init.cpp.o
+clang++: warning: argument unused during compilation: '-L/tmp/phosphor-002/sysroot/usr/lib64' [-Wunused-command-line-argument]
+[14/27] Building CXX object CMakeFiles/terminal-core.dir/terminal.cpp.o
+clang++: warning: argument unused during compilation: '-L/tmp/phosphor-002/sysroot/usr/lib64' [-Wunused-command-line-argument]
+[15/27] Building CXX object CMakeFiles/terminal-core.dir/pty.cpp.o
+clang++: warning: argument unused during compilation: '-L/tmp/phosphor-002/sysroot/usr/lib64' [-Wunused-command-line-argument]
+[16/27] Linking CXX static library libterminal-core.a
+[17/27] Running rcc for resource glyph_shaders
+[18/27] Building CXX object CMakeFiles/terminal-view.dir/home/Nozba/Codex/Project-PHOSPHOR/Project-PHOSPHOR/prototypes/qt-gpu-atlas/fixture.cpp.o
+clang++: warning: argument unused during compilation: '-L/tmp/phosphor-002/sysroot/usr/lib64' [-Wunused-command-line-argument]
+[19/27] Building CXX object CMakeFiles/terminal-view.dir/.qt/rcc/qrc_glyph_shaders.cpp.o
+clang++: warning: argument unused during compilation: '-L/tmp/phosphor-002/sysroot/usr/lib64' [-Wunused-command-line-argument]
+[20/27] Building CXX object CMakeFiles/terminal-view.dir/home/Nozba/Codex/Project-PHOSPHOR/Project-PHOSPHOR/prototypes/qt-molten-amber/renderer.cpp.o
+clang++: warning: argument unused during compilation: '-L/tmp/phosphor-002/sysroot/usr/lib64' [-Wunused-command-line-argument]
+[21/27] Building CXX object CMakeFiles/terminal-view.dir/view.cpp.o
+clang++: warning: argument unused during compilation: '-L/tmp/phosphor-002/sysroot/usr/lib64' [-Wunused-command-line-argument]
+[22/27] Linking CXX static library libterminal-view.a
+[23/27] Building CXX object CMakeFiles/phosphor-terminal.dir/main.cpp.o
+clang++: warning: argument unused during compilation: '-L/tmp/phosphor-002/sysroot/usr/lib64' [-Wunused-command-line-argument]
+[24/27] Linking CXX executable phosphor-terminal
+[25/27] Building CXX object CMakeFiles/terminal-tests.dir/tests.cpp.o
+clang++: warning: argument unused during compilation: '-L/tmp/phosphor-002/sysroot/usr/lib64' [-Wunused-command-line-argument]
+[26/27] Linking CXX executable terminal-tests
+Test project /tmp/phosphor-004/clang-build
+    Start 1: terminal-core-pty
+1/1 Test #1: terminal-core-pty ................   Passed    0.32 sec
+
+100% tests passed, 0 tests failed out of 1
+
+Total Test time (real) =   0.32 sec
