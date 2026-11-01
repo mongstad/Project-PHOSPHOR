@@ -1,0 +1,27 @@
+Start testing: Nov 01 19:03 CET
+----------------------------------------------------------
+1/1 Testing: glyph-material
+1/1 Test: glyph-material
+Command: "/tmp/phosphor-002/clang-build/renderer-tests"
+Directory: /tmp/phosphor-002/clang-build
+"glyph-material" start time: Nov 01 19:03 CET
+Output:
+----------------------------------------------------------
+PASS 12 pt DPR 1
+PASS 12 pt DPR 1.5
+PASS 12 pt DPR 2
+PASS 14 pt DPR 1
+PASS 14 pt DPR 1.5
+PASS 14 pt DPR 2
+PASS 16 pt DPR 1
+PASS 16 pt DPR 1.5
+PASS 16 pt DPR 2
+<end of output>
+Test time =  10.36 sec
+----------------------------------------------------------
+Test Passed.
+"glyph-material" end time: Nov 01 19:03 CET
+"glyph-material" time elapsed: 00:00:10
+----------------------------------------------------------
+
+End testing: Nov 01 19:03 CET

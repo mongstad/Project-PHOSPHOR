@@ -16,3 +16,8 @@ unchanged. See the [final report](research/PHOSPHOR-001/REPORT.md) for evidence
 and unverified testing limits. The [stop record](research/PHOSPHOR-001/STOP_RECORD.md)
 is a historical snapshot from before review preparation. Any further investigation
 or product implementation requires separate owner authorization.
+
+Issue #3 evaluates an isolated C++20/Qt 6 glyph-aware alternative:
+[prototype and run instructions](prototypes/qt-molten-amber/README.md),
+[PHOSPHOR-002 evidence and recommendation](research/PHOSPHOR-002/REPORT.md).
+This is a visual-only feasibility experiment, not a terminal implementation.

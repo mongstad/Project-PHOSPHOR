@@ -1,0 +1,10 @@
+[1/2] Building CXX object CMakeFiles/renderer-tests.dir/tests.cpp.o
+clang++: warning: argument unused during compilation: '-L/tmp/phosphor-002/sysroot/usr/lib64' [-Wunused-command-line-argument]
+[2/2] Linking CXX executable renderer-tests
+Test project /tmp/phosphor-002/ubsan-build
+    Start 1: glyph-material
+1/1 Test #1: glyph-material ...................   Passed   12.13 sec
+
+100% tests passed, 0 tests failed out of 1
+
+Total Test time (real) =  12.13 sec

@@ -1,0 +1,20 @@
+[1/4] Building CXX object CMakeFiles/molten.dir/renderer.cpp.o
+clang++: warning: argument unused during compilation: '-L/tmp/phosphor-002/sysroot/usr/lib64' [-Wunused-command-line-argument]
+[2/4] Linking CXX static library libmolten.a
+[3/4] Linking CXX executable renderer-tests
+[4/4] Linking CXX executable phosphor-002
+[1/6] Building CXX object CMakeFiles/molten.dir/renderer.cpp.o
+clang++: warning: argument unused during compilation: '-L/tmp/phosphor-002/sysroot/usr/lib64' [-Wunused-command-line-argument]
+[2/6] Linking CXX static library libmolten.a
+[3/6] Building CXX object CMakeFiles/renderer-tests.dir/tests.cpp.o
+clang++: warning: argument unused during compilation: '-L/tmp/phosphor-002/sysroot/usr/lib64' [-Wunused-command-line-argument]
+[4/6] Linking CXX executable renderer-tests
+[5/6] Building CXX object CMakeFiles/phosphor-002.dir/main.cpp.o
+clang++: warning: argument unused during compilation: '-L/tmp/phosphor-002/sysroot/usr/lib64' [-Wunused-command-line-argument]
+[6/6] Linking CXX executable phosphor-002
+[1/4] Building CXX object CMakeFiles/renderer-tests.dir/tests.cpp.o
+clang++: warning: argument unused during compilation: '-L/tmp/phosphor-002/sysroot/usr/lib64' [-Wunused-command-line-argument]
+[2/4] Linking CXX executable renderer-tests
+[3/4] Building CXX object CMakeFiles/phosphor-002.dir/main.cpp.o
+clang++: warning: argument unused during compilation: '-L/tmp/phosphor-002/sysroot/usr/lib64' [-Wunused-command-line-argument]
+[4/4] Linking CXX executable phosphor-002

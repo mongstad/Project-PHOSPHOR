@@ -1,0 +1,13 @@
+1080p-idle-baseline complete
+1080p-idle-material complete
+1080p-update-baseline complete
+1080p-update-material complete
+Disabling output 3
+Traceback (most recent call last):
+  File "/home/Nozba/Codex/Project-PHOSPHOR/Project-PHOSPHOR/research/PHOSPHOR-002/tools/native-validation.py", line 53, in <module>
+    run(f'{tag}-{work}-{mode}',args,True)
+    ~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/Nozba/Codex/Project-PHOSPHOR/Project-PHOSPHOR/research/PHOSPHOR-002/tools/native-validation.py", line 20, in run
+    if proc.poll() is not None: raise RuntimeError(f'{label} exited before capture')
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: physical-4k-idle-baseline exited before capture

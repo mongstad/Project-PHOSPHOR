@@ -1,0 +1,34 @@
+-- The CXX compiler identification is Clang 20.0.0
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/lib64/rocm/llvm/bin/clang++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+-- Found Threads: TRUE
+-- Performing Test HAVE_STDATOMIC
+-- Performing Test HAVE_STDATOMIC - Success
+-- Found WrapAtomic: TRUE
+-- Found OpenGL: /tmp/phosphor-001-native/sysroot/usr/lib64/libOpenGL.so
+-- Found WrapOpenGL: TRUE
+-- Found WrapVulkanHeaders: /tmp/phosphor-001-native/sysroot/usr/include
+-- Configuring done (0.6s)
+-- Generating done (0.0s)
+-- Build files have been written to: /tmp/phosphor-002/ubsan-build
+[1/6] Building CXX object CMakeFiles/molten.dir/renderer.cpp.o
+clang++: warning: argument unused during compilation: '-L/tmp/phosphor-002/sysroot/usr/lib64' [-Wunused-command-line-argument]
+[2/6] Linking CXX static library libmolten.a
+[3/6] Building CXX object CMakeFiles/renderer-tests.dir/tests.cpp.o
+clang++: warning: argument unused during compilation: '-L/tmp/phosphor-002/sysroot/usr/lib64' [-Wunused-command-line-argument]
+[4/6] Linking CXX executable renderer-tests
+[5/6] Building CXX object CMakeFiles/phosphor-002.dir/main.cpp.o
+clang++: warning: argument unused during compilation: '-L/tmp/phosphor-002/sysroot/usr/lib64' [-Wunused-command-line-argument]
+[6/6] Linking CXX executable phosphor-002
+Test project /tmp/phosphor-002/ubsan-build
+    Start 1: glyph-material
+1/1 Test #1: glyph-material ...................   Passed   11.40 sec
+
+100% tests passed, 0 tests failed out of 1
+
+Total Test time (real) =  11.40 sec
