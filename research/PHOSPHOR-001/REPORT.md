@@ -1,18 +1,25 @@
 # PHOSPHOR-001 — native Ghostty feasibility result
 
-**Recommendation: NO-GO for the tested config-only post-processing approach
-as PHOSPHOR's visual foundation.** At normal 12 pt, the real application adds
-an outline/halo but does not reproduce the approved metallic glyph surfaces.
+**Investigation complete. Owner decision, 2026-11-01: NO-GO for the tested
+Ghostty config-only post-processing approach as PHOSPHOR's rendering foundation.**
+The owner reviewed the real native screenshots and rejected this approach.
+This is a completed feasibility investigation with a negative technical outcome;
+the investigation established that this tested approach does not meet the
+approved visual design.
+
+At normal 12 pt, the real application adds a limited outline/halo but does not
+reproduce metallic glyph interiors or convincing illuminated typography.
 Amber cell backgrounds receive the same material treatment as glyphs, and
 native chrome remains ordinary. These are material gaps against the approved
 concept, not grounds to lower its acceptance criteria.
 
-This recommendation applies to this experiment and the composited-frame API.
+This decision applies to the tested config-only post-processing approach.
 It is not proof that every possible shader is incapable of any metallic effect,
 or that a separately authorized glyph-aware Ghostty modification cannot work.
-No such renderer modification has been implemented or validated. The owner
-decides the gate. No full product work, merge, issue closure or release follows
-from this report.
+No such renderer modification has been implemented or validated. The owner has
+decided this gate; the original visual acceptance criteria remain unchanged.
+No full product work, alternative architecture investigation, merge, issue
+closure or release follows from this report.
 
 ## What ran
 
@@ -95,6 +102,9 @@ GPU and include the compositor and other applications.
 
 All 12 runs exited successfully and recorded 720 samples. Raw data and per-run
 geometry/logs are preserved in [measurements](evidence/native/measurements/).
+RSS, whole-GPU memory and power observations are also retained in the raw CSV.
+These measurements characterize the tested workloads, not a performance pass
+or evidence of visual acceptance.
 
 These observations do not provide per-process GPU timings, frame-presentation
 rates, dropped-frame counts, physical 4K acceptance or key-to-pixel latency.
@@ -124,25 +134,31 @@ No full implementation or further phase was started.
   Both final baseline and prototype preserve `(6,5,4)` in empty areas. Old
   captures and interrupted diagnostic sampling are retained under
   `evidence/native/preflight/`, excluded from final comparisons/measurements.
-- The benchmark originally lacked a visible mode label. After the owner
-  pointed out the open console had no effect, the active run was verified to
-  be the effects-off baseline and its title labeled. Subsequent runs label
-  baseline/prototype in the title before warmup. Workload content and cadence
-  were unchanged. The small effect in the saved prototype was not presented
-  as a visual pass.
+- Initial benchmark windows lacked visible mode labels. The active effects-off
+  baseline was identified from its run ID and shader-loading log, then labeled.
+  Subsequent runs label baseline/prototype in the title before warmup. Terminal
+  workload content and cadence were unchanged. One label update occurred during
+  an existing baseline run; the raw samples were retained without exclusions.
 
 The [original Phase 0 validation record](evidence/validation.txt) and report
 are retained as historical evidence. New native logs, original screenshots,
 raw samples, source/config hashes and build provenance accompany this report.
+The [evidence index](EVIDENCE.md) distinguishes final native captures,
+diagnostics, unexecuted preparations and historical records. The
+[historical stop record](STOP_RECORD.md) describes the earlier local/unpublished
+state; that publication status is superseded by this final review preparation.
+See [finalization checks](FINALIZATION_VALIDATION.md) for the offline evidence
+audit and focused regression results. No rendering experiment was repeated
+during finalization.
 
-## Owner review
+## Owner review disposition
 
-Reject this post-process-only prototype as meeting the approved PHOSPHOR
-appearance. Keep Ghostty's existing terminal functionality as a possible
-foundation only if the owner separately authorizes a bounded glyph-aware
-renderer feasibility issue. Such work would need a demonstrated glyph mask /
-material-coordinate path, separate selection/cursor handling, its own cost and
-maintenance assessment, and another native visual/performance gate.
+The owner has rejected the tested config-only shader as a viable rendering
+foundation for PHOSPHOR's approved design. PR #2 records this completed NO-GO
+investigation and preserves its evidence for review. The remaining interaction,
+latency and physical-display gaps above are explicitly unverified; no further
+experiment is needed to document the owner's rejection of this tested approach.
 
-This PR does not authorize that work or a full application. The owner retains
-merge and phase decisions; issue #1 is not closed automatically.
+Any future investigation requires separate owner instructions. PR #2 is left
+unmerged for owner review, and issue #1 remains open. No new issue, PR,
+alternative architecture work or full implementation is part of finalization.

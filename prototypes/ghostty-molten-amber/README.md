@@ -1,8 +1,9 @@
 # Molten Amber composited-frame experiment
 
 For [PHOSPHOR-001](https://github.com/mongstad/Project-PHOSPHOR/issues/1).
-**Executed in a locally built Ghostty 1.4.0 on Fedora/KDE/Wayland.** See the
-[native findings](../../research/PHOSPHOR-001/REPORT.md). This is a disposable experiment to test
+**Executed in a locally built Ghostty 1.4.0 on Fedora/KDE/Wayland; rejected by
+the owner with a NO-GO outcome.** See the
+[final native findings](../../research/PHOSPHOR-001/REPORT.md). This retained experiment tested
 whether a small local filter produces useful cores, contours, and glow at normal
 font sizes. It does not establish a metallic glyph material or concept fidelity.
 Read the [research report](../../research/PHOSPHOR-001/REPORT.md) first.
@@ -39,7 +40,12 @@ The experiment uses `alpha-blending=linear-corrected` and converts its material
 colors to linear space. A native run exposed a lifted background with the
 earlier `native` setting; the diagnostic captures are retained separately.
 
-## Native validation procedure
+## Archived native validation procedure
+
+The runbook below preserves the planned procedure for reproducibility. The
+[final report](../../research/PHOSPHOR-001/REPORT.md) records which parts ran and
+which remain unverified. It is not an instruction to resume testing, install
+software, or begin another experiment after the owner's NO-GO decision.
 
 1. Record `ghostty +version`, GPU/driver, monitor refresh, KDE/Wayland versions,
    scale and exact **terminal surface pixel dimensions**, plus the prototype

@@ -84,7 +84,8 @@ not a separate DMABUF conformance test.
 The original launcher disabled loading default files, but Ghostty creates a
 template **before** parsing that flag. The first preflight therefore created
 `~/.config/ghostty/config.ghostty`. It was identified by the creation log and
-its exact template contents, preserved under the local session records, then
+its exact template contents, preserved in the
+[original session archive](evidence/native/session/initial-user-template.ghostty), then
 removed after verifying the preserved bytes. No pre-existing config was
 overwritten. Its hash is in the provenance record.
 

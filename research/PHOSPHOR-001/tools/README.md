@@ -14,7 +14,9 @@ were already installed. Do not run them against unrelated windows.
   scroll; scroll emits 32 lines per approximately 1/60 second. It records PTY
   geometry, output counts and receipt of a known paste marker. It does not
   record arbitrary keyboard input. Its alternate-screen mode is supplemental;
-  the separate existing curses fixture is also used for native TUI inspection.
+  neither that mode nor the separate curses fixture received native TUI
+  validation before testing stopped. The earlier curses check used a
+  pseudo-terminal only.
 - `bench.py` runs baseline/prototype separately at exact 1920×1080 and
   3840×2160 client sizes. Each resolution has three repetitions, with mode
   order alternating. Each process gets 10 seconds to warm up, followed by
@@ -33,3 +35,18 @@ The read-only compositor queries verify the allocated client/buffer dimensions.
 The raw samples and per-run logs are authoritative for which runs completed.
 An interrupted diagnostic dataset from the old color-space setting is retained
 under `evidence/native/preflight/` and is excluded from final summaries.
+These scripts are preserved as executed, including their fixed paths and raw
+PTY behavior; finalization does not revise the workload or rerun it. In
+particular, the idle workload puts the PTY in raw mode without enabling newline
+output translation. Its generated fixture layout can differ from the normal
+Bash captures; both measured modes used this same workload. The scroll path
+explicitly emits CRLF. This limits generalization to normal shell workloads.
+
+`check_evidence.py` is a later **offline** finalization audit. It reads the
+preserved CSV/JSON/log/image files, recomputes the report table, verifies input
+and archive hashes, checks local links, and compares historical files with Git.
+It does not execute the native helpers, renderer or workloads. It uses existing
+Pillow/PyNaCl libraries and expects the retained `/tmp/phosphor-001-native`
+source/compiler/build files for its final provenance checks. See the
+[finalization record](../FINALIZATION_VALIDATION.md) for the exact executed
+checks and the raw-capture whitespace exception.
